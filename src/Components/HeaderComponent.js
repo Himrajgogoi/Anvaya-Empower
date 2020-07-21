@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, NavbarBrand, Nav, NavItem, NavbarToggler, Collapse, Button } from "reactstrap";
+import { Navbar, NavbarBrand, Nav, NavItem, NavbarToggler, Collapse, Button, Dropdown, DropdownMenu, DropdownItem, DropdownToggle } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
 class Header extends Component {
@@ -132,6 +132,7 @@ class Header extends Component {
 
             <
             NavItem >
+
             <
             NavLink to = "./consultancy"
             className = "nav-link"
@@ -141,9 +142,14 @@ class Header extends Component {
                 linkstyle1
             } >
             <
-            h4 className = "text-white"
-            onMouseEnter = { this.handleCon } >
-            Consultancy < /h4></NavLink > <
+            h4 className = "text-white" >
+            Consultancy <
+            span onClick = { this.handleCon }
+            className = "fa fa-arrow-down"
+            style = {
+                { color: "white", paddingLeft: "10px" }
+            } > < /span>  <  /
+            h4 > < /NavLink > <
             Collapse isOpen = { this.state.isConsultNavOpen } >
             <
             NavItem onMouseEnter = { this.toggleChild1 }
@@ -154,7 +160,8 @@ class Header extends Component {
             <
             NavLink to = "/home"
             className = "nav-link text-white" > Dummy < /NavLink> < /
-            NavItem > <
+            NavItem >
+            <
             NavItem onMouseEnter = { this.toggleChild2 }
             onMouseLeave = { this.toggleChild2 }
             style = {
@@ -163,7 +170,9 @@ class Header extends Component {
             <
             NavLink to = "/home"
             className = "nav-link text-white" > Dummy < /NavLink> < /
-            NavItem > <
+            NavItem >
+
+            <
             NavItem onMouseEnter = { this.toggleChild3 }
             onMouseLeave = { this.toggleChild3 }
             style = {
@@ -171,9 +180,10 @@ class Header extends Component {
             } >
             <
             NavLink to = "/home"
-            className = "nav-link text-white" > Dummy < /NavLink> < /
-            NavItem > <
-            /Collapse>  < /NavItem >
+            className = "nav-link text-white" > Dummy < /NavLink>  < /
+            NavItem > < /Collapse> <
+            /
+            NavItem >
             <
             NavItem >
             <

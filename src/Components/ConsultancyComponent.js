@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import Header from "./HeaderComponent";
 
 class Consultancy extends Component {
     render() {
-        return ( < div > < /div>);
+        return ( < div > < Header / > < /div>);
         }
     }
 
