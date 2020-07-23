@@ -148,8 +148,8 @@ class Header extends Component {
             className = "fa fa-arrow-down"
             style = {
                 { color: "white", paddingLeft: "10px" }
-            } > < /span>  <  /
-            h4 > < /NavLink > <
+            } > < /span> <
+            /h4 >  < /NavLink > <
             Collapse isOpen = { this.state.isConsultNavOpen } >
             <
             NavItem onMouseEnter = { this.toggleChild1 }
@@ -181,8 +181,7 @@ class Header extends Component {
             <
             NavLink to = "/home"
             className = "nav-link text-white" > Dummy < /NavLink>  < /
-            NavItem > < /Collapse> <
-            /
+            NavItem > < /Collapse> < /
             NavItem >
             <
             NavItem >

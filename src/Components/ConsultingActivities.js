@@ -29,11 +29,11 @@ class Activities extends Component {
             Link to = "/home" >
             <
             Card style = {
-                { marginTop: "10px", minHeight: "30vh" }
+                { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
             <
             CardBody style = {
-                { backgroundColor: `#871B1B` }
+                { backgroundColor: `#871B1B`, borderRadius: "12px" }
             } >
             <
             CardText className = "text-white" > Card4 < /CardText> < /
@@ -47,11 +47,11 @@ class Activities extends Component {
             Link to = "/home" >
             <
             Card style = {
-                { marginTop: "10px", minHeight: "30vh" }
+                { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
             <
             CardBody style = {
-                { backgroundColor: `#871B1B` }
+                { backgroundColor: `#871B1B`, borderRadius: "12px" }
             } >
             <
             CardText className = "text-white" > Card1 < /CardText> < /
@@ -67,11 +67,11 @@ class Activities extends Component {
             Link to = "/home" >
             <
             Card style = {
-                { marginTop: "10px", minHeight: "30vh" }
+                { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
             <
             CardBody style = {
-                { backgroundColor: `#871B1B` }
+                { backgroundColor: `#871B1B`, borderRadius: "12px" }
             } >
             <
             CardText className = "text-white" > Card2 < /CardText> < /
@@ -86,11 +86,11 @@ class Activities extends Component {
             Link to = "/home" >
             <
             Card style = {
-                { marginTop: "10px", minHeight: "30vh" }
+                { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
             <
             CardBody style = {
-                { backgroundColor: `#871B1B` }
+                { backgroundColor: `#871B1B`, borderRadius: "12px" }
             } >
             <
             CardText className = "text-white" > Card3 < /CardText> < /
@@ -111,11 +111,11 @@ class Activities extends Component {
             Link to = "/home" >
             <
             Card style = {
-                { marginTop: "10px", minHeight: "30vh" }
+                { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
             <
             CardBody style = {
-                { backgroundColor: "red" }
+                { backgroundColor: "red", borderRadius: "12px" }
             } >
             <
             CardText className = "text-white" > Card4 < /CardText> < /
@@ -129,11 +129,11 @@ class Activities extends Component {
             Link to = "/home" >
             <
             Card style = {
-                { marginTop: "10px", minHeight: "30vh" }
+                { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
             <
             CardBody style = {
-                { backgroundColor: "red" }
+                { backgroundColor: "red", borderRadius: "12px" }
             } >
             <
             CardText className = "text-white" > Card1 < /CardText> < /
@@ -147,11 +147,11 @@ class Activities extends Component {
             Link to = "/home" >
             <
             Card style = {
-                { marginTop: "10px", minHeight: "30vh" }
+                { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
             <
             CardBody style = {
-                { backgroundColor: "red" }
+                { backgroundColor: "red", borderRadius: "12px" }
             } >
             <
             CardText className = "text-white" > Card2 < /CardText> < /
@@ -166,11 +166,11 @@ class Activities extends Component {
             Link to = "/home" >
             <
             Card style = {
-                { marginTop: "10px", minHeight: "30vh" }
+                { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
             <
             CardBody style = {
-                { backgroundColor: "red" }
+                { backgroundColor: "red", borderRadius: "12px" }
             } >
             <
             CardText className = "text-white" > Card3 < /CardText> < /
@@ -191,11 +191,11 @@ class Activities extends Component {
             Link to = "/home" >
             <
             Card style = {
-                { marginTop: "10px", minHeight: "30vh" }
+                { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
             <
             CardBody style = {
-                { backgroundColor: "green" }
+                { backgroundColor: "green", borderRadius: "12px" }
             } >
             <
             CardText className = "text-white" > Card4 < /CardText> < /
@@ -209,11 +209,11 @@ class Activities extends Component {
             Link to = "/home" >
             <
             Card style = {
-                { marginTop: "10px", minHeight: "30vh" }
+                { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
             <
             CardBody style = {
-                { backgroundColor: "green" }
+                { backgroundColor: "green", borderRadius: "12px" }
             } >
             <
             CardText className = "text-white" > Card1 < /CardText> < /
@@ -227,11 +227,11 @@ class Activities extends Component {
             Link to = "/home" >
             <
             Card style = {
-                { marginTop: "10px", minHeight: "30vh" }
+                { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
             <
             CardBody style = {
-                { backgroundColor: "green" }
+                { backgroundColor: "green", borderRadius: "12px" }
             } >
             <
             CardText className = "text-white" > Card2 < /CardText> < /
@@ -248,11 +248,11 @@ class Activities extends Component {
             Link to = "/home" >
             <
             Card style = {
-                { marginTop: "10px", minHeight: "30vh" }
+                { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
             <
             CardBody style = {
-                { backgroundColor: "green" }
+                { backgroundColor: "green", borderRadius: "12px" }
             } >
             <
             CardText className = "text-white" > Card3 < /CardText> < /
