@@ -12,12 +12,20 @@ class Technologies extends Component {
             isCard1Open: false,
             isCard2Open: false,
             isCard3Open: false,
-            isCard4Open: false
+            isCard4Open: false,
+            isHoverCard1: false,
+            isHoverCard2: false,
+            isHoverCard3: false,
+            isHoverCard4: false,
         }
         this.handleCard1 = this.handleCard1.bind(this);
         this.handleCard2 = this.handleCard2.bind(this);
         this.handleCard3 = this.handleCard3.bind(this);
         this.handleCard4 = this.handleCard4.bind(this);
+        this.handleHover1 = this.handleHover1.bind(this);
+        this.handleHover2 = this.handleHover2.bind(this);
+        this.handleHover3 = this.handleHover3.bind(this);
+        this.handleHover4 = this.handleHover4.bind(this);
     }
 
     handleCard1() {
@@ -33,7 +41,47 @@ class Technologies extends Component {
         this.setState({ isCard4Open: !this.state.isCard4Open });
     }
 
+    handleHover1() {
+        this.setState({ isHoverCard1: !this.state.isHoverCard1 });
+    }
+    handleHover2() {
+        this.setState({ isHoverCard2: !this.state.isHoverCard2 });
+    }
+    handleHover3() {
+        this.setState({ isHoverCard3: !this.state.isHoverCard3 });
+    }
+    handleHover4() {
+        this.setState({ isHoverCard4: !this.state.isHoverCard4 });
+    }
+
     render() {
+        var style1;
+        var style2;
+        var style3;
+        var style4;
+
+        if (this.state.isHoverCard1) {
+            style1 = { backgroundColor: "blue", borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
+        } else {
+            style1 = { backgroundColor: `#C4C4C4`, borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
+        }
+        if (this.state.isHoverCard2) {
+            style2 = { backgroundColor: "blue", borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
+        } else {
+            style2 = { backgroundColor: `#C4C4C4`, borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
+        }
+        if (this.state.isHoverCard3) {
+            style3 = { backgroundColor: "blue", borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
+        } else {
+            style3 = { backgroundColor: `#C4C4C4`, borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
+        }
+        if (this.state.isHoverCard4) {
+            style4 = { backgroundColor: "blue", borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
+
+        } else {
+            style4 = { backgroundColor: `#C4C4C4`, borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
+        }
+
         return ( <
             div >
             <
@@ -87,8 +135,10 @@ class Technologies extends Component {
             } >
             <
             CardHeader style = {
-                { backgroundColor: `#C4C4C4`, borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
-            } > < span className = "fa fa-square fa-lg text-white" > <
+                style1
+            }
+            onMouseEnter = { this.handleHover1 }
+            onMouseLeave = { this.handleHover1 } > < span className = "fa fa-square fa-lg text-white" > <
             /span><h3 className="d-inline text-white"> Card1 < /
             h3 > < span className = "fa fa-arrow-down fa-lg text-white"
             style = {
@@ -114,8 +164,10 @@ class Technologies extends Component {
             } >
             <
             CardHeader style = {
-                { backgroundColor: `#C4C4C4`, borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
-            } > < span className = "fa fa-square fa-lg text-white" >
+                style2
+            }
+            onMouseEnter = { this.handleHover2 }
+            onMouseLeave = { this.handleHover2 } > < span className = "fa fa-square fa-lg text-white" >
             <
             /span><h3 className="d-inline text-white">  Card2 < /
             h3 > < span className = "fa fa-arrow-down fa-lg text-white"
@@ -153,8 +205,10 @@ class Technologies extends Component {
             } >
             <
             CardHeader style = {
-                { backgroundColor: `#C4C4C4`, borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
-            } > < span className = "fa fa-square fa-lg text-white " >
+                style3
+            }
+            onMouseEnter = { this.handleHover3 }
+            onMouseLeave = { this.handleHover3 } > < span className = "fa fa-square fa-lg text-white " >
             <
             /span><h3 className="d-inline text-white"> Card3 < /
             h3 > < span className = "fa fa-arrow-down fa-lg text-white"
@@ -181,8 +235,10 @@ class Technologies extends Component {
             } >
             <
             CardHeader style = {
-                { backgroundColor: `#C4C4C4`, borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
-            } > < span className = "fa fa-square fa-lg text-white" >
+                style4
+            }
+            onMouseEnter = { this.handleHover4 }
+            onMouseLeave = { this.handleHover4 } > < span className = "fa fa-square fa-lg text-white" >
             <
             /span><h3 className="d-inline text-white"> Card4 < /
             h3 > < span className = "fa fa-arrow-down fa-lg text-white"
