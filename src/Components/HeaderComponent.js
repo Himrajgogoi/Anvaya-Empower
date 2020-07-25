@@ -104,134 +104,103 @@ class Header extends Component {
             childstyle3 = { backgroundColor: "black" };
         }
 
-        return ( <
-            div >
-            <
-            Navbar expand = "md"
-            style = {
+        return ( <div >
+            <Navbar expand = "lg" style = {
                 { backgroundColor: "black" }
             } >
-            <
-            div className = "container" >
+            <div className = "container">
 
-            <
-            NavbarBrand > < h4 className = "text-white" >
-            Anvaya - Empower < /h4></NavbarBrand >
+            <NavbarBrand > < h4 className = "text-white" >
+            Anvaya - Empower </h4></NavbarBrand>
 
 
-            <
-            NavbarToggler onClick = { this.handleNav } > < span className = "fa fa-arrow-down fa-lg d-inline"
+            <NavbarToggler onClick = { this.handleNav } > < span className = "fa fa-arrow-down fa-lg d-inline"
             style = {
                 { color: "white" }
-            } > < /span> < /
-            NavbarToggler > <
-            Collapse isOpen = { this.state.isNavOpen }
+            } > </span> </NavbarToggler > 
+            <Collapse isOpen = { this.state.isNavOpen }
             navbar >
-            <
-            Nav navbar >
+            <Nav navbar >
 
-            <
-            NavItem >
+            <NavItem >
 
-            <
-            NavLink to = "./consultancy"
+            <NavLink to = "./consultancy"
             className = "nav-link"
             onMouseEnter = { this.toggleHover1 }
             onMouseLeave = { this.toggleHover1 }
             style = {
                 linkstyle1
             } >
-            <
-            h4 className = "text-white" >
-            Consultancy <
-            span onClick = { this.handleCon }
+            <h4 className = "text-white" >
+            Consultancy <span onClick = { this.handleCon }
             className = "fa fa-arrow-down"
             style = {
                 { color: "white", paddingLeft: "10px" }
-            } > < /span> <
-            /h4 >  < /NavLink > <
-            Collapse isOpen = { this.state.isConsultNavOpen } >
-            <
-            NavItem onMouseEnter = { this.toggleChild1 }
+            } > </span> </h4 >  </NavLink > 
+            <Collapse isOpen = { this.state.isConsultNavOpen } >
+
+            <NavItem onMouseEnter = { this.toggleChild1 }
             onMouseLeave = { this.toggleChild1 }
             style = {
                 childstyle1
             } >
-            <
-            NavLink to = "/home"
-            className = "nav-link text-white" > Dummy < /NavLink> < /
-            NavItem >
-            <
-            NavItem onMouseEnter = { this.toggleChild2 }
+            <NavLink to = "/home"
+            className = "nav-link text-white" > Dummy </NavLink> 
+            </NavItem >
+            <NavItem onMouseEnter = { this.toggleChild2 }
             onMouseLeave = { this.toggleChild2 }
             style = {
                 childstyle2
             } >
-            <
-            NavLink to = "/home"
-            className = "nav-link text-white" > Dummy < /NavLink> < /
-            NavItem >
+            <NavLink to = "/home"
+            className = "nav-link text-white" > Dummy </NavLink> 
+            </NavItem >
 
-            <
-            NavItem onMouseEnter = { this.toggleChild3 }
+            <NavItem onMouseEnter = { this.toggleChild3 }
             onMouseLeave = { this.toggleChild3 }
             style = {
                 childstyle3
             } >
-            <
-            NavLink to = "/home"
-            className = "nav-link text-white" > Dummy < /NavLink>  < /
-            NavItem > < /Collapse> < /
-            NavItem >
-            <
-            NavItem >
-            <
-            NavLink to = "./technologies"
+            <NavLink to = "/home"
+            className = "nav-link text-white" > Dummy </NavLink>  
+            </NavItem > </Collapse> 
+            </NavItem >
+            <NavItem >
+            <NavLink to = "./technologies"
             className = "nav-link text-white"
             onMouseEnter = { this.toggleHover2 }
             onMouseLeave = { this.toggleHover2 }
             style = {
                 linkstyle2
             } >
-            <
-            h4 > Technologies < /h4></NavLink >
-            <
-            /NavItem>  <
-            NavItem >
-            <
-            NavLink to = "./aboutus"
+            <h4 > Technologies </h4></NavLink >
+            </NavItem>  
+            <NavItem >
+
+            <NavLink to = "./aboutus"
             className = "nav-link text-white"
             onMouseEnter = { this.toggleHover3 }
             onMouseLeave = { this.toggleHover3 }
             style = {
                 linkstyle3
             } >
-            <
-            h4 > About us < /h4></NavLink >
-            <
-            /NavItem>  <
-            NavItem >
-            <
-            NavLink to = "./contactus"
+            <h4 > About us </h4></NavLink >
+            </NavItem>  
+            <NavItem >
+            <NavLink to = "./contactus"
             className = "nav-link text-white"
             onMouseEnter = { this.toggleHover4 }
             onMouseLeave = { this.toggleHover4 }
             style = {
                 linkstyle4
             } >
-            <
-            h4 > Contact Us < /h4></NavLink >
-            <
-
-            /
-            NavItem >
-            <
-            /
-            Nav > <
-            /Collapse>  < /
-            div > <
-            /Navbar> < /
-            div >
+            <h4 > Contact Us </h4></NavLink >
+            </NavItem >
+            </Nav > 
+            </Collapse>  
+            </div > 
+            </Navbar> 
+            </div >
         )
     }
 }

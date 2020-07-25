@@ -45,89 +45,70 @@ class Home extends Component {
         }
 
 
-        return ( < div className = "body"
+        return ( <div className = "body"
             style = {
                 { filter: "blur(4px)" }
             } >
-            <
-            Header / >
-            <
-            div className = "container" >
-            <
-            div className = "row"
+            <Header />
+            <div className = "container" >
+            <div className = "row"
             style = {
                 { display: "flex", flexDirection: "row", alignItems: "stretch", justifyContent: "space-between" }
             } >
-            <
-            div className = "col-12" >
-            <
-            Modal isOpen = { this.state.isModalOpen }
+            <div className = "col-12" >
+            <Modal isOpen = { this.state.isModalOpen }
             style = {
                 { minWidth: "60vw" }
             } >
-            <
-            ModalBody style = {
+            <ModalBody style = {
                 { backgroundColor: `rgb(26, 26, 32)` }
             } >
-            <
-            div className = "container"
+            <div className = "container"
             style = {
                 { minHeight: "70vh" }
             } >
-            <
-            div className = "row" >
-            <
-            div className = "col-12 col-sm-6"
+            <div className = "row" >
+            <div className = "col-12 col-sm-6"
             style = {
                 { marginTop: "80px" }
             } >
-            <
-            p > < h4 className = "text-white" > Welcome,
-            At AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned. < /h4></p >
-            <
-            /div> <
-            div className = "col-12 col-sm-4 offset-sm-1" >
-            <
-            h3 className = "text-white"
+            <p > < h4 className = "text-white" > Welcome,
+            At AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned. </h4></p >
+            </div> 
+            <div className = "col-12 col-sm-4 offset-sm-1" >
+            <h3 className = "text-white"
             style = {
                 { marginLeft: "13px", marginTop: "10px" }
-            } > Our Services < /h3> <
-            div className = "container" >
-            <
-            div className = "row" >
-            <
-            div className = "col-12" >
-            <
-            Link to = "/consultancy"
+            } > Our Services </h3> 
+            <div className = "container" >
+            <div className = "row" >
+            <div className = "col-12" >
+            <Link to = "/consultancy"
             onMouseEnter = { this.handleConHover }
             onMouseLeave = { this.handleConHover } >
-            <
-            Button style = {
+            <Button style = {
                 Con
-            } > < h5 > Consultancy < /h5><span className="fa fa-arrow-right"></span > < /Button> < /
-            Link >
+            } > <h5 > Consultancy </h5><span className="fa fa-arrow-right"></span > </Button> 
 
-            <
-            Link to = "/technologies"
+            </Link >
+
+            <Link to = "/technologies"
             onMouseEnter = { this.handleTechHover }
             onMouseLeave = { this.handleTechHover } >
-            <
-            Button style = {
+            <Button style = {
                 Tech
-            } > < h5 > Technologies < /h5><span className="fa fa-arrow-right"></span > < /Button> < /
-            Link >
-            <
-            /div> < /
-            div > < /div> < /
-            div > <
-            /div> < /
-            div > <
-            /ModalBody> < /
-            Modal > <
-            /div> < /
-            div > <
-            /div> < /
-            div > );
+            } > < h5 > Technologies </h5><span className="fa fa-arrow-right"></span > </Button> </Link >
+            </div> 
+            </div > </div> 
+            </div > 
+            </div> 
+            </div > 
+            </ModalBody> 
+            </Modal > 
+            </div> 
+            </div > 
+            </div> 
+            </div > );
     }
 }
 

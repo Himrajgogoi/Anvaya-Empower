@@ -82,119 +82,92 @@ class Technologies extends Component {
             style4 = { backgroundColor: `#C4C4C4`, borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
         }
 
-        return ( <
-            div >
-            <
-            Header / >
-            <
-            Jumbotron style = {
+        return ( <div >
+            <Header />
+            <Jumbotron style = {
                 { backgroundColor: `#36E11A`, marginBottom: "0px", minHeight: "2vh" }
             } >
-            <
-            div className = "container" >
-            <
-            div className = "row" >
-            <
-            div className = "col12 col-sm-6" >
-            <
-            h1 style = {
+            <div className = "container" >
+            <div className = "row" >
+            <div className = "col12 col-sm-6" >
+            <h1 style = {
                 { marginTop: "5px", marginBottom: "5px", marginLeft: "0px" }
             }
-            className = "text-white" > Technologies < /h1> < /
-            div > <
-            /div> < /
-            div > <
-            /Jumbotron> <
-            CarouselProvider naturalSlideWidth = { 100 }
+            className = "text-white" > Technologies </h1> 
+            </div > 
+            </div> 
+            </div > 
+            </Jumbotron> 
+            <CarouselProvider naturalSlideWidth = { 100 }
             totalSlides = { 3 }
             isIntrinsicHeight = "true"
             isPlaying = "true"
             style = {
                 { marginTop: "0px", backgroundColor: `#58FAE6`, paddingTop: "10px", paddingBottom: "20px", minHeight: "30vh" }
             } >
-            <
-            Slider >
-            <
-            Slide index = { 0 } > < h4 > Slide1 < /h4>< /Slide > <
-            Slide index = { 1 } >
-            <
-            h4 > Slide2 < /h4>  < /Slide > <
-            Slide index = { 2 } >
-            <
-            h4 > Slide3 < /h4>  < /Slide > < /
-            Slider > <
-            /CarouselProvider> <
-            div className = "container" >
-            <
-            div className = "row" >
-            <
-            div className = "col-12 col-sm-6" >
-            <
-            Card style = {
+            <Slider >
+            <Slide index = { 0 } > <h4 > Slide1 </h4></Slide > 
+            <Slide index = { 1 } >
+            <h4 > Slide2 </h4>  </Slide > 
+            <Slide index = { 2 } >
+            <h4 > Slide3 </h4>  </Slide > 
+            </Slider > </CarouselProvider> 
+            <div className = "container" >
+            <div className = "row" >
+            <div className = "col-12 col-sm-6" >
+            <Card style = {
                 { borderRadius: "8px", marginTop: "25px", minWidth: "20vw", minHeight: "15vh" }
             } >
-            <
-            CardHeader style = {
+            <CardHeader style = {
                 style1
             }
             onMouseEnter = { this.handleHover1 }
-            onMouseLeave = { this.handleHover1 } > < span className = "fa fa-square fa-lg text-white" > <
-            /span><h3 className="d-inline text-white"> Card1 < /
-            h3 > < span className = "fa fa-arrow-down fa-lg text-white"
+            onMouseLeave = { this.handleHover1 } > <span className = "fa fa-square fa-lg text-white" > </span>
+            <h3 className="d-inline text-white"> Card1 </h3 > < span className = "fa fa-arrow-down fa-lg text-white"
             style = {
                 {
                     display: "flex",
                     justifyContent: "flex-end"
                 }
             }
-            onClick = { this.handleCard1 } > < /span>  < /CardHeader > <
-            Collapse isOpen = { this.state.isCard1Open } >
-            <
-            CardBody style = {
+            onClick = { this.handleCard1 } > </span>  </CardHeader > 
+            <Collapse isOpen = { this.state.isCard1Open } >
+            <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText > Dummy < /CardText></CardBody >
-            <
-            /Collapse> < /
-            Card > <
-            /div> <
-            div className = "col-12 col-sm-6" >
-            <
-            Card style = {
+            } > < CardText > Dummy </CardText></CardBody >
+            </Collapse> 
+            </Card > 
+            </div> 
+            <div className = "col-12 col-sm-6" >
+            <Card style = {
                 { borderRadius: "8px", marginBottom: "10px", marginTop: "25px", minWidth: "20vw", minHeight: "15vh" }
             } >
-            <
-            CardHeader style = {
+            <CardHeader style = {
                 style2
             }
             onMouseEnter = { this.handleHover2 }
             onMouseLeave = { this.handleHover2 } > < span className = "fa fa-square fa-lg text-white" >
-            <
-            /span><h3 className="d-inline text-white">  Card2 < /
-            h3 > < span className = "fa fa-arrow-down fa-lg text-white"
+            </span><h3 className="d-inline text-white">  Card2 </h3 > 
+            < span className = "fa fa-arrow-down fa-lg text-white"
             style = {
                 {
                     display: "flex",
                     justifyContent: "flex-end"
                 }
             }
-            onClick = { this.handleCard2 } > < /span>  < /CardHeader > <
-            Collapse isOpen = { this.state.isCard2Open } >
-            <
-            CardBody style = {
+            onClick = { this.handleCard2 } > </span>  </CardHeader > 
+            <Collapse isOpen = { this.state.isCard2Open } >
+            <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText > Dummy < /CardText></CardBody >
-            <
-            /Collapse> < /
-            Card > <
-            /div> < /
-            div >
+            } > < CardText > Dummy </CardText></CardBody >
+            </Collapse> 
+            </Card > 
+            </div> 
+            </div >
 
-            <
-            div className = "row" >
-            <
-            div className = "col-12 col-sm-6" >
-            <
-            Card style = {
+            <div className = "row" >
+            <div className = "col-12 col-sm-6" >
+            <Card style = {
                 {
                     borderRadius: "8px",
                     marginBottom: "10px",
@@ -203,67 +176,56 @@ class Technologies extends Component {
                     minHeight: "15vh"
                 }
             } >
-            <
-            CardHeader style = {
+            <CardHeader style = {
                 style3
             }
             onMouseEnter = { this.handleHover3 }
             onMouseLeave = { this.handleHover3 } > < span className = "fa fa-square fa-lg text-white " >
-            <
-            /span><h3 className="d-inline text-white"> Card3 < /
-            h3 > < span className = "fa fa-arrow-down fa-lg text-white"
+            </span><h3 className="d-inline text-white"> Card3 </h3 > < span className = "fa fa-arrow-down fa-lg text-white"
             style = {
                 {
                     display: "flex",
                     justifyContent: "flex-end"
                 }
             }
-            onClick = { this.handleCard3 } > < /span> < /CardHeader > <
-            Collapse isOpen = { this.state.isCard3Open } >
-            <
-            CardBody style = {
+            onClick = { this.handleCard3 } > </span> </CardHeader > 
+            <Collapse isOpen = { this.state.isCard3Open } >
+            <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText > Dummy < /CardText></CardBody >
-            <
-            /Collapse> < /
-            Card > <
-            /div> <
-            div className = "col-12 col-sm-6" >
-            <
-            Card style = {
+            } > < CardText > Dummy </CardText></CardBody >
+            </Collapse> 
+            </Card > 
+            </div> 
+            <div className = "col-12 col-sm-6" >
+            <Card style = {
                 { borderRadius: "8px", marginBottom: "10px", marginTop: "10px", minWidth: "20vw", minHeight: "15vh" }
             } >
-            <
-            CardHeader style = {
+            <CardHeader style = {
                 style4
             }
             onMouseEnter = { this.handleHover4 }
             onMouseLeave = { this.handleHover4 } > < span className = "fa fa-square fa-lg text-white" >
-            <
-            /span><h3 className="d-inline text-white"> Card4 < /
-            h3 > < span className = "fa fa-arrow-down fa-lg text-white"
+            </span><h3 className="d-inline text-white"> Card4 </h3 > 
+            < span className = "fa fa-arrow-down fa-lg text-white"
             style = {
                 {
                     display: "flex",
                     justifyContent: "flex-end"
                 }
             }
-            onClick = { this.handleCard4 } > < /span>  < /CardHeader > <
-            Collapse isOpen = { this.state.isCard4Open } >
-            <
-            CardBody style = {
+            onClick = { this.handleCard4 } > </span>  </CardHeader > 
+            <Collapse isOpen = { this.state.isCard4Open } >
+            <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText > Dummy < /CardText></CardBody >
-            <
-            /Collapse> < /
-            Card > <
-            /div> < /
-            div >
+            } > < CardText > Dummy </CardText></CardBody >
+            </Collapse> 
+            </Card > 
+            </div> 
+            </div >
 
-            <
-            /div>  < /
-            div >
-        )
+            </div>  
+            </div >
+        );
     }
 }
 

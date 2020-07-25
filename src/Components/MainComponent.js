@@ -6,23 +6,21 @@ import { Switch, Route, Redirect } from "react-router-dom";
 
 class Main extends Component {
     render() {
-        return ( < >
+        return ( <>
 
-            <
-            Switch >
-            <
-            Route path = "/home"
+            <Switch >
+            <Route path = "/home"
             component = { Home }
-            /> <
-            Route path = "/consultancy"
+            /> 
+            <Route path = "/consultancy"
             component = { Consultancy }
-            /> <
-            Route path = "/technologies"
+            /> 
+            <Route path = "/technologies"
             component = { Technologies }
-            /> <
-            Redirect to = "/home" / >
-            <
-            /Switch> < / >
+            /> 
+            <Redirect to = "/home" />
+            </Switch> 
+            </ >
         )
     }
 }
