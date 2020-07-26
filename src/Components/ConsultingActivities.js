@@ -19,7 +19,7 @@ class Activities extends Component {
             <Slide index = { 0 } > < div className = "container" >
             <div className = "row" >
             <div className = "col-6 col-md-3" >
-            <Link to = "/home" >
+            <Link to = "/consultancychildren" >
             <Card style = {
                 { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
@@ -31,7 +31,7 @@ class Activities extends Component {
             </Link > 
             </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/home" >
+            <Link to = "/consultancychildren" >
             <Card style = {
                 { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
@@ -43,7 +43,7 @@ class Activities extends Component {
 
             </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/home" >
+            <Link to = "/consultancychildren" >
             <Card style = {
                 { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
@@ -54,7 +54,7 @@ class Activities extends Component {
             </Link > 
             </div >
             <div className = "col-6 col-md-3" >
-            <Link to = "/home" >
+            <Link to = "/consultancychildren" >
             <Card style = {
                 { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
@@ -71,7 +71,7 @@ class Activities extends Component {
             <div className = "container" > 
             <div className = "row" >
             <div className = "col-6 col-md-3" >
-            <Link to = "/home" >
+            <Link to = "/consultancychildren" >
             <Card style = {
                 { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
@@ -82,7 +82,7 @@ class Activities extends Component {
             </Card>  
             </Link > </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/home" >
+            <Link to = "/consultancychildren" >
             <Card style = {
                 { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
@@ -93,7 +93,7 @@ class Activities extends Component {
             </CardBody > </Card> </Link > 
             </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/home" >
+            <Link to = "/consultancychildren" >
             <Card style = {
                 { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
@@ -105,7 +105,7 @@ class Activities extends Component {
             </Card> </Link > 
             </div >
             <div className = "col-6 col-md-3" >
-            <Link to = "/home" >
+            <Link to = "/consultancychildren" >
             <Card style = {
                 { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
@@ -123,7 +123,7 @@ class Activities extends Component {
             <div className = "container" > 
             <div className = "row" >
             <div className = "col-6 col-md-3" >
-            <Link to = "/home" >
+            <Link to = "/consultancychildren" >
             <Card style = {
                 { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
@@ -133,7 +133,7 @@ class Activities extends Component {
             <CardText className = "text-white" > Card4 </CardText> </CardBody > </Card> </Link > 
             </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/home" >
+            <Link to = "/consultancychildren" >
             <Card style = {
                 { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
@@ -143,7 +143,7 @@ class Activities extends Component {
             <CardText className = "text-white" > Card1 </CardText> </CardBody > </Card>  </Link > 
             </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/home" >
+            <Link to = "/consultancychildren" >
             <Card style = {
                 { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >
@@ -155,7 +155,7 @@ class Activities extends Component {
 
             </div >
             <div className = "col-6 col-md-3" >
-            <Link to = "/home" >
+            <Link to = "/consultancychildren" >
             <Card style = {
                 { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
             } >

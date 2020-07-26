@@ -91,9 +91,4 @@ class Consultancy extends Component {
         );
     }
 }
-
-
-
-
-
 export default Consultancy;

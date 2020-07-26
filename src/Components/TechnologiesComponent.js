@@ -112,7 +112,7 @@ class Technologies extends Component {
             <Slide index = { 2 } >
             <h4 > Slide3 </h4>  </Slide > 
             </Slider > </CarouselProvider> 
-            <div className = "container" >
+            <div className = "container" style={{marginBottom: "5vh"}}>
             <div className = "row" >
             <div className = "col-12 col-sm-6" >
             <Card style = {
@@ -134,7 +134,7 @@ class Technologies extends Component {
             <Collapse isOpen = { this.state.isCard1Open } >
             <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText > Dummy </CardText></CardBody >
+            } > < CardText > Dummy <Link to="/technologieschildren" style={{color: "white"}}>read more <span className="fa fa-arrow-right d-inline"></span></Link> </CardText></CardBody >
             </Collapse> 
             </Card > 
             </div> 
@@ -159,7 +159,7 @@ class Technologies extends Component {
             <Collapse isOpen = { this.state.isCard2Open } >
             <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText > Dummy </CardText></CardBody >
+            } > < CardText > Dummy <Link to="/technologieschildren" style={{color: "white"}}>read more <span className="fa fa-arrow-right d-inline"></span></Link> </CardText></CardBody >
             </Collapse> 
             </Card > 
             </div> 
@@ -192,7 +192,7 @@ class Technologies extends Component {
             <Collapse isOpen = { this.state.isCard3Open } >
             <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText > Dummy </CardText></CardBody >
+            } > < CardText > Dummy <Link to="/technologieschildren" style={{color: "white"}}>read more <span className="fa fa-arrow-right d-inline"></span></Link> </CardText></CardBody >
             </Collapse> 
             </Card > 
             </div> 
@@ -217,7 +217,7 @@ class Technologies extends Component {
             <Collapse isOpen = { this.state.isCard4Open } >
             <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText > Dummy </CardText></CardBody >
+            } > < CardText > Dummy <Link to="/technologieschildren" style={{color: "white"}}>read more <span className="fa fa-arrow-right d-inline" ></span></Link> </CardText></CardBody >
             </Collapse> 
             </Card > 
             </div> 
