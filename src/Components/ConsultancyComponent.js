@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ButtonPlay } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide} from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Header from "./HeaderComponent";
 import Activities from "./ConsultingActivities";
 import Consulting from "./Consulting";
 import Blog from "./Blog";
-import { Card, CardImgOverlay, CardImg, CardBody, CardText, Button, Jumbotron } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Jumbotron } from "reactstrap";
+
 
 class Consultancy extends Component {
     render() {

@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import Header from "./HeaderComponent";
-import { Card, CardImgOverlay, CardImg, CardBody, CardText, Button, Jumbotron } from "reactstrap";
+import { Card, CardBody, CardText} from "reactstrap";
 
 function Aboutus(props){
     return(
@@ -19,7 +19,7 @@ function Aboutus(props){
            <div className="container" style={{marginTop: "10vh", marginBottom: "10vh"}}>
                    <div className="row">
                        <div className="col-12" style={{display: "flex", justifyContent: "center"}} >
-                           <Card style={{minHeight: "60vh", minWidth: "80vw", backgroundColor: `#C4C4C4`, boxShadow: "5px 10px rgb(93, 93, 99)"}}>
+                           <Card style={{minHeight: "60vh", minWidth: "80vw", backgroundColor: `#C4C4C4`, boxShadow: "5px 10px 8px rgb(93, 93, 99)"}}>
                                <div className="container">
                                    <div className="row">
                                        <div className="col-12 col-md-6">

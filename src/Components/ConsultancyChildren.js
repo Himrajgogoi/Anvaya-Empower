@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import Header from "./HeaderComponent";
 import { CarouselProvider, Slider, Slide} from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import {Jumbotron} from "reactstrap";
+
 
 class ConsultancyChildren extends Component{
 

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ButtonPlay } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide} from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Header from "./HeaderComponent";
-import { Collapse, Card, CardHeader, CardImgOverlay, CardImg, CardBody, CardText, Button, Jumbotron } from "reactstrap";
+import { Collapse, Card, CardHeader, CardBody, CardText, Jumbotron } from "reactstrap";
 import { Link } from "react-router-dom";
 
 class Technologies extends Component {
