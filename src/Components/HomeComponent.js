@@ -72,7 +72,7 @@ class Home extends Component {
             style = {
                 { marginTop: "80px" }
             } >
-            <p > < h4 className = "text-white" style={{fontFamily: "Montserrat, sans-serif-800x"}}> Welcome,
+            <p > < h4 className = "text-white" style={{fontFamily: "Montserrat, sans-serif", fontWeight: "600"}}> Welcome,
             at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned. </h4></p >
             </div> 
             <div className = "col-12 col-sm-4 offset-sm-1" >

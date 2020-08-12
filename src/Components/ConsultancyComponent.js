@@ -19,7 +19,7 @@ class Consultancy extends Component {
             <div className = "row" >
             <div className = "col12 col-sm-6" >
             <h1 style = {
-                { marginTop: "5px", marginBottom: "5px", marginLeft: "0px" }
+                { marginTop: "5px", marginBottom: "5px", marginLeft: "0px", fontFamily: "Montserrat, sans-serif", fontWeight: "800"}
             }
             className = "text-white" > Consultancy </h1> </div > 
             </div> </div > 
@@ -29,20 +29,27 @@ class Consultancy extends Component {
             isIntrinsicHeight = "true"
             isPlaying = "true"
             style = {
-                { marginTop: "0px", backgroundColor: `#FDF886`, paddingTop: "10px", paddingBottom: "20px", minHeight: "30vh" }
+                { marginTop: "0px", backgroundColor: `#FDF886`,minHeight: "30vh" }
             } >
             <Slider >
-            <Slide index = { 0 } > < h4 > Slide1 </h4></Slide > 
-            <Slide index = { 1 } >
-            <h4 > Slide2 </h4>  
+            <Slide index = { 0 } style={{backgroundImage: "url('https://images.pexels.com/photos/6229/marketing-board-strategy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')",
+             backgroundSize: "cover", backgroundFit: "no repeat", backgroundPosition: "center center", minHeight:"30vh" }}>
+                 <div className="container" style={{display:"flex",flexDirection:"row", justifyContent: "center",paddingTop:"30vh" }}><div className="row">
+                 <div className="col-3"  >< h4 className="text-white"> Slide1 </h4></div></div></div></Slide > 
+            <Slide index = { 1 } style={{backgroundImage: "url('https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')",
+             backgroundSize: "cover", backgroundFit: "no repeat", backgroundPosition: "center center", minHeight:"30vh" }}>
+            <div className="container" style={{display:"flex",flexDirection:"row", justifyContent: "center",paddingTop:"30vh" }}><div className="row">
+                 <div className="col-3"  >< h4 className="text-white"> Slide2 </h4></div></div></div>
             </Slide > 
-            <Slide index = { 2 } >
-            <h4 > Slide3 </h4>  </Slide > 
+            <Slide index = { 2 } style={{backgroundImage: "url('https://images.pexels.com/photos/1181421/pexels-photo-1181421.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')",
+             backgroundSize: "cover", backgroundFit: "no repeat", backgroundPosition: "center center", minHeight:"30vh" }}>
+            <div className="container" style={{display:"flex",flexDirection:"row", justifyContent: "center",paddingTop:"30vh" }}><div className="row">
+                 <div className="col-3"  >< h4 className="text-white"> Slide3 </h4></div></div></div></Slide > 
             </Slider > </CarouselProvider>  
             <div className = "container"
             style = {
                 {
-                    backgroundColor: `rgb(3, 3, 41)`,
+                    backgroundColor: `rgb(156, 243, 43)`,
                     marginBottom: "0px",
                     paddingBottom: "10px",
                     paddingTop: "10px",
@@ -53,7 +60,7 @@ class Consultancy extends Component {
             <div className = "row" >
             <div className = "col12 col-sm-6" >
             <h2 style = {
-                { marginTop: "5px", marginBottom: "5px" }
+                { marginTop: "5px", marginBottom: "5px", fontFamily: "Montserrat, sans-serif", fontWeight: "600" }
             }
             className = "text-white" > Consulting Activities </h2> </div > 
             </div> 
@@ -67,7 +74,7 @@ class Consultancy extends Component {
             <div className = "row" >
             <div className = "col12 col-sm-6" >
             <h2 style = {
-                { marginTop: "5px", marginBottom: "5px" }
+                { marginTop: "5px", marginBottom: "5px",fontFamily: "Montserrat, sans-serif", fontWeight: "600" }
             }
             className = "text-white" > Consulting </h2> 
             </div > 
@@ -81,7 +88,7 @@ class Consultancy extends Component {
             <div className = "row" >
             <div className = "col12 col-sm-6" >
             <h2 style = {
-                { marginTop: "5px", marginBottom: "5px" }
+                { marginTop: "5px", marginBottom: "5px", fontFamily: "Montserrat, sans-serif", fontWeight: "600" }
             }
             className = "text-white" > Blog </h2> </div > 
             </div> 

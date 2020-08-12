@@ -4,7 +4,7 @@ import { CarouselProvider, Slider, Slide} from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 
-class ConsultancyChildren extends Component{
+class BlogChildren extends Component{
 
     constructor(props){
         super(props);
@@ -18,7 +18,7 @@ class ConsultancyChildren extends Component{
                     <div className="container">
                         <div className="row">
                             <div className="col-12 col-sm-6">
-                                <h1 style={{marginTop: "25px", color: "white"}}>Activities</h1>
+                                <h1 style={{marginTop: "25px", color: "white", fontFamily: "Montserrat, sans-serif", fontWeight: "800"}}>Blog</h1>
                             </div>
                         </div>
                     </div>
@@ -61,4 +61,4 @@ class ConsultancyChildren extends Component{
     }
 
 }
-export default ConsultancyChildren;
+export default BlogChildren;

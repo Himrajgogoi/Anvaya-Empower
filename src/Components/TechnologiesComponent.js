@@ -82,6 +82,39 @@ class Technologies extends Component {
             style4 = { backgroundColor: `#C4C4C4`, borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
         }
 
+        var icon1;
+        var icon2;
+        var icon3;
+        var icon4;
+
+        if(this.state.isCard1Open){
+            icon1 = "fa fa-arrow-up fa-lg text-white"
+        }
+        else{
+            icon1="fa fa-arrow-down fa-lg text-white"
+        }
+
+        if(this.state.isCard2Open){
+            icon2 = "fa fa-arrow-up fa-lg text-white"
+        }
+        else{
+            icon2="fa fa-arrow-down fa-lg text-white"
+        }
+
+        if(this.state.isCard3Open){
+            icon3 = "fa fa-arrow-up fa-lg text-white"
+        }
+        else{
+            icon3="fa fa-arrow-down fa-lg text-white"
+        }
+
+        if(this.state.isCard4Open){
+            icon4 = "fa fa-arrow-up fa-lg text-white"
+        }
+        else{
+            icon4="fa fa-arrow-down fa-lg text-white"
+        }
+
         return ( <div >
             <Header />
             <Jumbotron style = {
@@ -91,7 +124,8 @@ class Technologies extends Component {
             <div className = "row" >
             <div className = "col12 col-sm-6" >
             <h1 style = {
-                { marginTop: "5px", marginBottom: "5px", marginLeft: "0px" }
+                { marginTop: "5px", marginBottom: "5px", marginLeft: "0px",
+                fontFamily: "Montserrat, sans-serif", fontWeight: "800" }
             }
             className = "text-white" > Technologies </h1> 
             </div > 
@@ -122,8 +156,9 @@ class Technologies extends Component {
                 style1
             }
             onMouseEnter = { this.handleHover1 }
-            onMouseLeave = { this.handleHover1 } > <span className = "fa fa-square fa-lg text-white" > </span>
-            <h3 className="d-inline text-white"> Card1 </h3 > < span className = "fa fa-arrow-down fa-lg text-white"
+            onMouseLeave = { this.handleHover1 } > <span className = "fa fa-laptop fa-lg text-white" > </span>
+            <h3 className="d-inline text-white" style={{
+            fontFamily: "Montserrat, sans-serif", fontWeight: "600"}}> IoT Solutions</h3 > < span className = {icon1}
             style = {
                 {
                     display: "flex",
@@ -134,7 +169,7 @@ class Technologies extends Component {
             <Collapse isOpen = { this.state.isCard1Open } >
             <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText > Dummy <Link to="/technologieschildren" style={{color: "white"}}>read more <span className="fa fa-arrow-right d-inline"></span></Link> </CardText></CardBody >
+            } > < CardText style={{color: `rgb(255, 255, 255)`}}> We provide world class IoT solutions to ease your daily life and give you a seamless experience <Link to="/technologieschildren" style={{color: `rgb(255, 230, 0)`}}>read more <span className="fa fa-arrow-right d-inline"></span></Link> </CardText></CardBody >
             </Collapse> 
             </Card > 
             </div> 
@@ -146,9 +181,10 @@ class Technologies extends Component {
                 style2
             }
             onMouseEnter = { this.handleHover2 }
-            onMouseLeave = { this.handleHover2 } > < span className = "fa fa-square fa-lg text-white" >
-            </span><h3 className="d-inline text-white">  Card2 </h3 > 
-            < span className = "fa fa-arrow-down fa-lg text-white"
+            onMouseLeave = { this.handleHover2 } > < span className = "fa fa-shield fa-lg text-white" >
+            </span><h3 className="d-inline text-white" style={{
+            fontFamily: "Montserrat, sans-serif", fontWeight: "600"}}> Cyber Security</h3 > 
+            < span className = {icon2}
             style = {
                 {
                     display: "flex",
@@ -159,7 +195,7 @@ class Technologies extends Component {
             <Collapse isOpen = { this.state.isCard2Open } >
             <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText > Dummy <Link to="/technologieschildren" style={{color: "white"}}>read more <span className="fa fa-arrow-right d-inline"></span></Link> </CardText></CardBody >
+            } > < CardText style={{color: `rgb(255, 255, 255)`}}> In today's digital world the importance of cyber security is immense <Link to="/technologieschildren" style={{color: `rgb(255, 230, 0)`}}>read more <span className="fa fa-arrow-right d-inline"></span></Link> </CardText></CardBody >
             </Collapse> 
             </Card > 
             </div> 
@@ -180,8 +216,9 @@ class Technologies extends Component {
                 style3
             }
             onMouseEnter = { this.handleHover3 }
-            onMouseLeave = { this.handleHover3 } > < span className = "fa fa-square fa-lg text-white " >
-            </span><h3 className="d-inline text-white"> Card3 </h3 > < span className = "fa fa-arrow-down fa-lg text-white"
+            onMouseLeave = { this.handleHover3 } > < span className = "fa fa-magic fa-lg text-white " >
+            </span><h3 className="d-inline text-white" style={{
+            fontFamily: "Montserrat, sans-serif", fontWeight: "600"}}> Automation Solutions</h3 > < span className = {icon3}
             style = {
                 {
                     display: "flex",
@@ -192,7 +229,7 @@ class Technologies extends Component {
             <Collapse isOpen = { this.state.isCard3Open } >
             <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText > Dummy <Link to="/technologieschildren" style={{color: "white"}}>read more <span className="fa fa-arrow-right d-inline"></span></Link> </CardText></CardBody >
+            } > < CardText style={{color: `rgb(255, 255, 255)`}}> Automaion is the future. We provide inovative automation solutions <Link to="/technologieschildren" style={{color: `rgb(255, 230, 0)`}}>read more <span className="fa fa-arrow-right d-inline"></span></Link> </CardText></CardBody >
             </Collapse> 
             </Card > 
             </div> 
@@ -204,9 +241,10 @@ class Technologies extends Component {
                 style4
             }
             onMouseEnter = { this.handleHover4 }
-            onMouseLeave = { this.handleHover4 } > < span className = "fa fa-square fa-lg text-white" >
-            </span><h3 className="d-inline text-white"> Card4 </h3 > 
-            < span className = "fa fa-arrow-down fa-lg text-white"
+            onMouseLeave = { this.handleHover4 } > < span className = "fa fa-globe fa-lg text-white" >
+            </span><h3 className="d-inline text-white" style={{
+            fontFamily: "Montserrat, sans-serif", fontWeight: "600"}}> Tracking Devices</h3 > 
+            < span className = {icon4}
             style = {
                 {
                     display: "flex",
@@ -217,7 +255,7 @@ class Technologies extends Component {
             <Collapse isOpen = { this.state.isCard4Open } >
             <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText > Dummy <Link to="/technologieschildren" style={{color: "white"}}>read more <span className="fa fa-arrow-right d-inline" ></span></Link> </CardText></CardBody >
+            } > < CardText style={{color: `rgb(255, 255, 255)`}}> Safety is incomplete without real-time tracking. We wish to provide the best safety measures in the market <Link to="/technologieschildren" style={{color:  `rgb(255, 230, 0)`}}>read more <span className="fa fa-arrow-right d-inline" ></span></Link> </CardText></CardBody >
             </Collapse> 
             </Card > 
             </div> 

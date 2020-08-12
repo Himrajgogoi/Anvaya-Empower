@@ -1,8 +1,13 @@
 import React, { Component } from "react";
 import { CarouselProvider, Slider, Slide} from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-
-import { Card, CardBody, CardText} from "reactstrap";
+import consultancy1 from "../images/consultancy1.jpeg";
+import consultancy2 from "../images/consultancy2.jpeg";
+import consultancy3 from "../images/consultancy3.jpeg";
+import consultancy4 from "../images/consultancy4.jpeg";
+import consultancy5 from "../images/consultancy5.jpeg";
+import consultancy6 from "../images/consultancy6.jpeg";
+import { Card, CardBody, CardText, CardImg} from "reactstrap";
 import { Link } from "react-router-dom";
 
 class Activities extends Component {
@@ -200,49 +205,57 @@ class Activities extends Component {
             <Slide index = { 0 } > < div className = "container" >
             <div className = "row" >
             <div className = "col-6 col-md-3" >
-            <Link to = "/consultancychildren" >
+            <Link to = "/ActivitiesChildren" >
             <Card style = {
                 slide1_style4
             } onMouseEnter ={this.handleHoverSlide1_Card4} onMouseLeave={this.handleHoverSlide1_Card4}>
+            <CardImg src={consultancy1} className="img-fluid" style={{ height:"30vh"}}/>
             <CardBody style = {
-                { backgroundColor: `#871B1B`, borderRadius: "12px" }
+                { backgroundColor: "white", borderRadius: "12px" }
             } >
-            <CardText className = "text-white" > Card4 </CardText> </CardBody > 
+            <CardText style={{color: "black",
+           fontFamily: "Montserrat, sans-serif", fontWeight: "800" }} ><h5><b>Business Development</b></h5> </CardText> </CardBody > 
             </Card>  
             </Link > 
             </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/consultancychildren" >
+            <Link to = "/ActivitiesChildren" >
             <Card style = {
                slide1_style1
             } onMouseEnter ={this.handleHoverSlide1_Card1} onMouseLeave={this.handleHoverSlide1_Card1}>
+            <CardImg src={consultancy2} className="img-fluid" style={{ height:"30vh"}}/>
             <CardBody style = {
-                { backgroundColor: `#871B1B`, borderRadius: "12px" }
+                { backgroundColor: "white", borderRadius: "12px" }
             } >
-            <CardText className = "text-white" > Card1 </CardText> 
+            <CardText style={{color: "black",
+        fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Management Planning</b></h5> </CardText> 
             </CardBody > </Card> </Link >
 
             </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/consultancychildren" >
+            <Link to = "/ActivitiesChildren" >
             <Card style = {
                 slide1_style2
             } onMouseEnter ={this.handleHoverSlide1_Card2} onMouseLeave={this.handleHoverSlide1_Card2}>
+            <CardImg src={consultancy3} className="img-fluid" style={{ height:"30vh"}}/>
             <CardBody style = {
-                { backgroundColor: `#871B1B`, borderRadius: "12px" }
+                { backgroundColor: "white", borderRadius: "12px" }
             } >
-            <CardText className = "text-white" > Card2 </CardText> </CardBody > </Card> 
+            <CardText style={{color: "black",
+        fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Project Management</b></h5></CardText> </CardBody > </Card> 
             </Link > 
             </div >
             <div className = "col-6 col-md-3" >
-            <Link to = "/consultancychildren" >
+            <Link to = "/ActivitiesChildren" >
             <Card style = {
                 slide1_style3
             } onMouseEnter ={this.handleHoverSlide1_Card3} onMouseLeave={this.handleHoverSlide1_Card3}>
+            <CardImg src={consultancy4} className="img-fluid" style={{ height:"30vh"}}/>
             <CardBody style = {
-                { backgroundColor: `#871B1B`, borderRadius: "12px" }
+                { backgroundColor:"white", borderRadius: "12px" }
             } >
-            <CardText className = "text-white" > Card3 </CardText> </CardBody > </Card> 
+            <CardText style={{color: "black",
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Contingency Planning</b></h5></CardText> </CardBody > </Card> 
             </Link > 
             </div > 
             </div > 
@@ -252,48 +265,56 @@ class Activities extends Component {
             <div className = "container" > 
             <div className = "row" >
             <div className = "col-6 col-md-3" >
-            <Link to = "/consultancychildren" >
+            <Link to = "/ActivitiesChildren" >
             <Card style = {
                slide2_style4
             }  onMouseEnter ={this.handleHoverSlide2_Card4} onMouseLeave={this.handleHoverSlide2_Card4}>
+            <CardImg src={consultancy5} className="img-fluid" style={{ height:"30vh"}}/>
             <CardBody style = {
-                { backgroundColor: "red", borderRadius: "12px" }
+                { backgroundColor: "white", borderRadius: "12px" }
             } >
-            <CardText className = "text-white" > Card4 </CardText> </CardBody > 
+            <CardText style={{color: "black",
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Project Management</b></h5></CardText> </CardBody > 
             </Card>  
             </Link > </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/consultancychildren" >
+            <Link to = "/ActivitiesChildren" >
             <Card style = {
                slide2_style1
             } onMouseEnter ={this.handleHoverSlide2_Card1} onMouseLeave={this.handleHoverSlide2_Card1}>
+            <CardImg src={consultancy6} className="img-fluid" style={{ height:"30vh"}}/>
             <CardBody style = {
-                { backgroundColor: "red", borderRadius: "12px" }
+                { backgroundColor: "white", borderRadius: "12px" }
             } >
-            <CardText className = "text-white" > Card1 </CardText> 
+            <CardText style={{color: "black",
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Contingency Planning</b></h5></CardText> 
             </CardBody > </Card> </Link > 
             </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/consultancychildren" >
+            <Link to = "/ActivitiesChildren" >
             <Card style = {
                 slide2_style2
             } onMouseEnter ={this.handleHoverSlide2_Card2} onMouseLeave={this.handleHoverSlide2_Card2}>
+            <CardImg src={consultancy1} className="img-fluid" style={{ height:"30vh"}}/>
             <CardBody style = {
-                { backgroundColor: "red", borderRadius: "12px" }
+                { backgroundColor: "white", borderRadius: "12px" }
             } >
-            <CardText className = "text-white" > Card2 </CardText> 
+            <CardText style={{color: "black",
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Business Development</b></h5></CardText> 
             </CardBody > 
             </Card> </Link > 
             </div >
             <div className = "col-6 col-md-3" >
-            <Link to = "/consultancychildren" >
+            <Link to = "/ActivitiesChildren" >
             <Card style = {
                 slide2_style3
             } onMouseEnter ={this.handleHoverSlide2_Card3} onMouseLeave={this.handleHoverSlide2_Card3}>
+            <CardImg src={consultancy2} className="img-fluid" style={{ height:"30vh"}}/> 
             <CardBody style = {
-                { backgroundColor: "red", borderRadius: "12px" }
+                { backgroundColor: "white", borderRadius: "12px" }
             } >
-            <CardText className = "text-white" > Card3 </CardText> </CardBody > 
+            <CardText style={{color: "black",
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Management Planning</b></h5></CardText> </CardBody > 
             </Card> 
             </Link > 
             </div > 
@@ -304,46 +325,54 @@ class Activities extends Component {
             <div className = "container" > 
             <div className = "row" >
             <div className = "col-6 col-md-3" >
-            <Link to = "/consultancychildren" >
+            <Link to = "/ActivitiesChildren" >
             <Card style = {
                slide3_style4
             } onMouseEnter ={this.handleHoverSlide3_Card4} onMouseLeave={this.handleHoverSlide3_Card4}>
+            <CardImg src={consultancy3} className="img-fluid" style={{ height:"30vh"}}/>
             <CardBody style = {
-                { backgroundColor: "green", borderRadius: "12px" }
+                { backgroundColor: "white", borderRadius: "12px" }
             } >
-            <CardText className = "text-white" > Card4 </CardText> </CardBody > </Card> </Link > 
+            <CardText style={{color: "black",
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Management Planning</b></h5></CardText> </CardBody > </Card> </Link > 
             </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/consultancychildren" >
+            <Link to = "/ActivitiesChildren" >
             <Card style = {
                slide3_style1
             }  onMouseEnter ={this.handleHoverSlide3_Card1} onMouseLeave={this.handleHoverSlide3_Card1}>
+            <CardImg src={consultancy4} className="img-fluid" style={{ height:"30vh"}}/>
             <CardBody style = {
-                { backgroundColor: "green", borderRadius: "12px" }
+                { backgroundColor: "white", borderRadius: "12px" }
             } >
-            <CardText className = "text-white" > Card1 </CardText> </CardBody > </Card>  </Link > 
+            <CardText style={{color: "black",
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Project Management</b></h5></CardText> </CardBody > </Card>  </Link > 
             </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/consultancychildren" >
+            <Link to = "/ActivitiesChildren" >
             <Card style = {
                 slide3_style2
             }  onMouseEnter ={this.handleHoverSlide3_Card2} onMouseLeave={this.handleHoverSlide3_Card2}>
+            <CardImg src={consultancy5} className="img-fluid" style={{ height:"30vh"}}/>
             <CardBody style = {
-                { backgroundColor: "green", borderRadius: "12px" }
+                { backgroundColor: "white", borderRadius: "12px" }
             } >
-            <CardText className = "text-white" > Card2 </CardText> </CardBody > 
+            <CardText style={{color: "black",
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Contingency Planning</b></h5></CardText> </CardBody > 
             </Card> </Link >
 
             </div >
             <div className = "col-6 col-md-3" >
-            <Link to = "/consultancychildren" >
+            <Link to = "/ActivitiesChildren" >
             <Card style = {
                 slide3_style3
             }  onMouseEnter ={this.handleHoverSlide3_Card3} onMouseLeave={this.handleHoverSlide3_Card3}>
+            <CardImg src={consultancy6} className="img-fluid" style={{ height:"30vh"}}/>
             <CardBody style = {
-                { backgroundColor: "green", borderRadius: "12px" }
+                { backgroundColor: "white", borderRadius: "12px" }
             } >
-            <CardText className = "text-white" > Card3 </CardText> </CardBody > </Card> </Link >
+            <CardText style={{color: "black",
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}}><h5><b>Business Development</b></h5></CardText> </CardBody > </Card> </Link >
 
             </div > 
             </div > 
