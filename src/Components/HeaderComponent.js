@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Navbar, NavbarBrand, Nav, NavItem, NavbarToggler, Collapse } from "reactstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import icon from "../images/anvaya.png";
 
 class Header extends Component {
     constructor(props) {
@@ -109,9 +110,9 @@ class Header extends Component {
                 { backgroundColor: "black" }
             } >
             <div className = "container">
-
-            <NavbarBrand > < h4 className = "text-white" >
-            Anvaya - Empower </h4></NavbarBrand>
+            <img src={icon} alt="icon" className="img-fluid" style={{height: "40px", width: "40px", marginRight:"2vh"}}/>
+            <NavbarBrand ><Link to="/home"> < h4 className = "text-white" >
+            Anvaya - Empower </h4></Link></NavbarBrand>
 
 
             <NavbarToggler onClick = { this.handleNav } > < span className = "fa fa-arrow-down fa-lg d-inline"
@@ -144,16 +145,16 @@ class Header extends Component {
             style = {
                 childstyle1
             } >
-            <NavLink to = "/home"
-            className = "nav-link text-white" > Dummy </NavLink> 
+            <NavLink to = "/ConsultancySectors"
+            className = "nav-link text-white" > Consultancy By Sector</NavLink> 
             </NavItem >
             <NavItem onMouseEnter = { this.toggleChild2 }
             onMouseLeave = { this.toggleChild2 }
             style = {
                 childstyle2
             } >
-            <NavLink to = "/home"
-            className = "nav-link text-white" > Dummy </NavLink> 
+            <NavLink to = "/ConsultancyServices"
+            className = "nav-link text-white" > Consultancy Service </NavLink> 
             </NavItem >
 
             <NavItem onMouseEnter = { this.toggleChild3 }
@@ -161,8 +162,8 @@ class Header extends Component {
             style = {
                 childstyle3
             } >
-            <NavLink to = "/home"
-            className = "nav-link text-white" > Dummy </NavLink>  
+            <NavLink to = "/BlogChildren"
+            className = "nav-link text-white" > Blogs </NavLink>  
             </NavItem > </Collapse> 
             </NavItem >
             <NavItem >

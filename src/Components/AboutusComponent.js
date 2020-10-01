@@ -1,20 +1,22 @@
 import React from "react";
 import Header from "./HeaderComponent";
 import { Card, CardBody, CardText} from "reactstrap";
+import Foter from "./Footer";
+import back from "../images/background-anvaya.png";
 
 function Aboutus(props){
     return(
-       <div>
+       <div style={{backgroundImage:`url(${back})`
+       ,backgroundSize: "cover", backgroundFit: "no repeat", backgroundPosition: "center center"}}>
            <Header/>
-           <div style={{marginBottom: "0px", minHeight: "15vh", backgroundColor:`#171F3E`, minWidth: "100vw"}}>
+           <div style={{marginBottom: "0px", minHeight: "15vh", backgroundColor:`rgb(3, 3, 41)`, minWidth: "100vw"}}>
                <div className="container">
                    <div className="row">
                        <div className="col-12 col-sm-6">
                            <h1 style={{marginTop: "25px", color: "white"}}>About Us</h1>
                        </div>
                    </div>
-               </div>
-              
+               </div>              
            </div>
            <div className="container" style={{marginTop: "10vh", marginBottom: "10vh"}}>
                    <div className="row">
@@ -23,7 +25,8 @@ function Aboutus(props){
                                <div className="container">
                                    <div className="row">
                                        <div className="col-12 col-md-6">
-                                           <h1>Image</h1>
+                                       <img src="https://www.flaticon.com/svg/static/icons/svg/3534/3534080.svg" alt = "guide" className="img-fluid" style={{height: "23vh", width: "20vw", padding: "8px 2px 8px 2px",display: "flex", flexDirection: "row",
+                            marginTop: "3vh", marginLeft: "3vw"}} />
                                        </div>
                                        <div className="col-12 col-md-6">
                                            <CardBody>
@@ -39,6 +42,7 @@ function Aboutus(props){
                        </div>
                    </div>
                </div>
+               <Foter/> 
        </div>
     );
 }

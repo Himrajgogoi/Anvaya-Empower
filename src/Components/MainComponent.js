@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import Home from "./HomeComponent";
+
 import Consultancy from "./ConsultancyComponent";
 import Technologies from "./TechnologiesComponent";
-import ConsultancyChildren from "./ActivitiesChildren";
-import TechnologiesChildren from "./TechnologiesChildren";
-import ConsultingChildren from "./ConsultingChildren";
+import ConsultancySectors from "./ConsultancySectors";
+import OurServiceAndProduct from "./OurServiceAndProduct";
+import ResearchAndDevelopment from "./Research&Development";
+import TrackingDevices from "./TrackingDevices";
+import TrainingAndLiveProjects from "./TrainingAndLiveProjects";
+import ConsultancyService from "./ConsultancyService";
 import BlogChildren from "./BlogChildren";
 import Aboutus from "./AboutusComponent";
 import Contactus from "./ContactusComponent";
@@ -24,14 +28,20 @@ class Main extends Component {
             <Route path = "/technologies"
             component = { Technologies }
             />
-            <Route path="/ActivitiesChildren" component={ConsultancyChildren}/>
-            <Route path="/ConsultingChildren" component={ConsultingChildren}/>
+             
+            <Route path="/ConsultancySectors" component={ConsultancySectors}/>
+            <Route path="/ConsultancyServices" component={ConsultancyService}/>
             <Route path = "/BlogChildren" component={BlogChildren}/>
-            <Route path = "/technologieschildren" component={TechnologiesChildren}/>
+
+            <Route path = "/OurServiceAndProduct" component={OurServiceAndProduct}/>
+            <Route path="/ResearchAndDevelopment" component={ResearchAndDevelopment}/>
+            <Route path="/TrainingAndLiveProjects" component={TrainingAndLiveProjects}/>
+            <Route path="/TrackingDevices" component={TrackingDevices}/>
+            
             <Route path = "/aboutus" component={Aboutus}/>
             <Route path = "/contactus" component={Contactus}/>  
             <Redirect to = "/home" />
-            </Switch> 
+            </Switch>
             </ >
         )
     }

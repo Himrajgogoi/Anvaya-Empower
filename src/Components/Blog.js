@@ -10,6 +10,7 @@ import consultancy6 from "../images/consultancy6.jpeg";
 import { Card, CardBody, CardText, CardImg} from "reactstrap";
 import { Link } from "react-router-dom";
 
+
 class Blog extends Component {
     constructor(props){
         super(props);
@@ -198,7 +199,7 @@ class Blog extends Component {
             isIntrinsicHeight = "true"
             isPlaying = "true"
             style = {
-                { backgroundColor: `rgb(223, 240, 131)`, paddingTop: "10px", paddingBottom: "20px", minHeight: "30vh" }
+                { backgroundColor: `rgb(211, 209, 245)`, paddingTop: "10px", paddingBottom: "20px", minHeight: "30vh" }
             } >
             <Slider >
             <Slide index = { 0 } > < div className = "container" >
@@ -213,7 +214,7 @@ class Blog extends Component {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Blog 1</b></h5></CardText> </CardBody > 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Blog 1</b></CardText> </CardBody > 
             </Card>  
             </Link > 
             </div > 
@@ -227,7 +228,7 @@ class Blog extends Component {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Blog 2</b></h5></CardText> 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Blog 2</b></CardText> 
             </CardBody > </Card> </Link >
 
             </div > 
@@ -241,7 +242,7 @@ class Blog extends Component {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Blog 3</b></h5></CardText> </CardBody > </Card> 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Blog 3</b></CardText> </CardBody > </Card> 
             </Link > 
             </div >
             <div className = "col-6 col-md-3" >
@@ -254,7 +255,7 @@ class Blog extends Component {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Blog 4</b></h5></CardText> </CardBody > </Card> 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Blog 4</b></CardText> </CardBody > </Card> 
             </Link > 
             </div > 
             </div > 
@@ -273,7 +274,7 @@ class Blog extends Component {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Blog 1</b></h5></CardText> </CardBody > 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Blog 1</b></CardText> </CardBody > 
             </Card>  
             </Link > </div > 
             <div className = "col-6 col-md-3" >
@@ -286,7 +287,7 @@ class Blog extends Component {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Blog 2</b></h5></CardText> 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Blog 2</b></CardText> 
             </CardBody > </Card> </Link > 
             </div > 
             <div className = "col-6 col-md-3" >
@@ -299,7 +300,7 @@ class Blog extends Component {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Blog 3</b></h5></CardText> 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Blog 3</b></CardText> 
             </CardBody > 
             </Card> </Link > 
             </div >
@@ -313,7 +314,7 @@ class Blog extends Component {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Blog 4</b></h5></CardText> </CardBody > 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Blog 4</b></CardText> </CardBody > 
             </Card> 
             </Link > 
             </div > 
@@ -333,7 +334,7 @@ class Blog extends Component {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Blog 1</b></h5></CardText> </CardBody > </Card> </Link > 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Blog 1</b></CardText> </CardBody > </Card> </Link > 
             </div > 
             <div className = "col-6 col-md-3" >
             <Link to = "/BlogChildren" >
@@ -345,7 +346,7 @@ class Blog extends Component {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Blog 2</b></h5></CardText> </CardBody > </Card>  </Link > 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Blog 2</b></CardText> </CardBody > </Card>  </Link > 
             </div > 
             <div className = "col-6 col-md-3" >
             <Link to = "/BlogChildren" >
@@ -357,7 +358,7 @@ class Blog extends Component {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Blog 3</b></h5></CardText> </CardBody > 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Blog 3</b></CardText> </CardBody > 
             </Card> </Link >
 
             </div >
@@ -371,7 +372,7 @@ class Blog extends Component {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Blog 4</b></h5></CardText> </CardBody > </Card> </Link >
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Blog 4</b></CardText> </CardBody > </Card> </Link >
 
             </div > 
             </div > 
@@ -379,6 +380,7 @@ class Blog extends Component {
             </Slide> 
             </Slider > 
             </CarouselProvider >
+            
             </div>
         );
     }

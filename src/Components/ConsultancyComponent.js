@@ -2,15 +2,18 @@ import React, { Component } from "react";
 import { CarouselProvider, Slider, Slide} from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Header from "./HeaderComponent";
-import Activities from "./ConsultingActivities";
-import Consulting from "./Consulting";
+import ConsultancyByService from "./ConsultancyByService";
+import ConsultancyBySector from "./ConsultancyBySector";
 import Blog from "./Blog";
-import { Jumbotron } from "reactstrap";
+import { CardBody, Jumbotron, Card, CardText } from "reactstrap";
+import Foter from "./Footer";
+import back from "../images/background-anvaya.png";
 
 
 class Consultancy extends Component {
     render() {
-        return ( <div >
+        return ( <div style={{backgroundImage:`url(${back})`
+        ,backgroundSize: "cover", backgroundFit: "no repeat", backgroundPosition: "center center"}}>
             <Header />
             <Jumbotron style = {
                 { backgroundColor: `rgb(3, 3, 41)`, marginBottom: "0px", minHeight: "2vh", paddingLeft: "0px" }
@@ -34,22 +37,76 @@ class Consultancy extends Component {
             <Slider >
             <Slide index = { 0 } style={{backgroundImage: "url('https://images.pexels.com/photos/6229/marketing-board-strategy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')",
              backgroundSize: "cover", backgroundFit: "no repeat", backgroundPosition: "center center", minHeight:"30vh" }}>
-                 <div className="container" style={{display:"flex",flexDirection:"row", justifyContent: "center",paddingTop:"30vh" }}><div className="row">
-                 <div className="col-3"  >< h4 className="text-white"> Slide1 </h4></div></div></div></Slide > 
+                <div className="container" style={{display:"flex",flexDirection:"row", justifyContent: "center",paddingTop:"30vh",paddingBottom:"2vh",
+                 minWidth: "90vw" }}><div className="row">
+                 <div className="col-12"  >
+                        <Card>
+                            <CardBody>
+                                <CardText>
+                                    <p>
+                                    < h4 style={{fontFamily: "Montserrat, sans-serif-800x"}}> Welcome,
+            at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned. </h4>
+                                    </p>
+                                    <p style={{display: "flex", flexDirection: "row", justifyContent: "center"}}><span className="fa fa-circle fa-lg"></span>
+                                    <span className="fa fa-circle" style={{color: "grey"}}></span>
+                                    <span className="fa fa-circle"style={{color: "grey"}}></span></p>
+                                </CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                 </div>
+                </div></Slide > 
             <Slide index = { 1 } style={{backgroundImage: "url('https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')",
              backgroundSize: "cover", backgroundFit: "no repeat", backgroundPosition: "center center", minHeight:"30vh" }}>
-            <div className="container" style={{display:"flex",flexDirection:"row", justifyContent: "center",paddingTop:"30vh" }}><div className="row">
-                 <div className="col-3"  >< h4 className="text-white"> Slide2 </h4></div></div></div>
+             <div className="container" style={{display:"flex",flexDirection:"row", justifyContent: "center",paddingTop:"30vh",paddingBottom:"2vh",
+                 minWidth: "90vw" }}><div className="row">
+                 <div className="col-12"  >
+                        <Card>
+                            <CardBody>
+                                <CardText>
+                                    <p>
+                                    < h4 style={{fontFamily: "Montserrat, sans-serif-800x"}}> Welcome,
+            at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned. </h4>
+                                    </p>
+                                    <p style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                                    <span className="fa fa-circle" style={{color: "grey"}}></span>
+                                    <span className="fa fa-circle fa-lg"></span>
+                                    <span className="fa fa-circle"style={{color: "grey"}}></span></p>
+                                </CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                 </div>
+                </div>
             </Slide > 
             <Slide index = { 2 } style={{backgroundImage: "url('https://images.pexels.com/photos/1181421/pexels-photo-1181421.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')",
              backgroundSize: "cover", backgroundFit: "no repeat", backgroundPosition: "center center", minHeight:"30vh" }}>
-            <div className="container" style={{display:"flex",flexDirection:"row", justifyContent: "center",paddingTop:"30vh" }}><div className="row">
-                 <div className="col-3"  >< h4 className="text-white"> Slide3 </h4></div></div></div></Slide > 
+            <div className="container" style={{display:"flex",flexDirection:"row", justifyContent: "center",paddingTop:"30vh",paddingBottom:"2vh",
+                 minWidth: "90vw" }}><div className="row">
+                 <div className="col-12"  >
+                        <Card>
+                            <CardBody>
+                                <CardText>
+                                    <p>
+                                    < h4 style={{fontFamily: "Montserrat, sans-serif-800x"}}> Welcome,
+            at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned. </h4>
+                                    </p>
+                                    <p style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                                    <span className="fa fa-circle" style={{color: "grey"}}></span>
+                                    <span className="fa fa-circle"style={{color: "grey"}}></span>
+                                    <span className="fa fa-circle fa-lg"></span></p>
+                                </CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                 </div>
+                </div>
+           </Slide > 
             </Slider > </CarouselProvider>  
             <div className = "container"
             style = {
                 {
-                    backgroundColor: `rgb(156, 243, 43)`,
+                    backgroundColor: `rgb(13, 6, 145)`,
                     marginBottom: "0px",
                     paddingBottom: "10px",
                     paddingTop: "10px",
@@ -62,14 +119,14 @@ class Consultancy extends Component {
             <h2 style = {
                 { marginTop: "5px", marginBottom: "5px", fontFamily: "Montserrat, sans-serif", fontWeight: "600" }
             }
-            className = "text-white" > Consulting Activities </h2> </div > 
+            className = "text-white" > Consultancy Service </h2> </div > 
             </div> 
             </div > 
-            <Activities />
+            <ConsultancyByService />
 
             <div className = "container"
             style = {
-                { backgroundColor: `rgb(3, 3, 41)`, marginBottom: "0px", paddingBottom: "10px", paddingTop: "10px", minWidth: "100vw" }
+                { backgroundColor: `rgb(13, 6, 145)`, marginBottom: "0px", paddingBottom: "10px", paddingTop: "10px", minWidth: "100vw" }
             } >
             <div className = "row" >
             <div className = "col12 col-sm-6" >
@@ -80,10 +137,10 @@ class Consultancy extends Component {
             </div > 
             </div> 
             </div >
-            <Consulting />
+            <ConsultancyBySector />
             <div className = "container"
             style = {
-                { backgroundColor: `rgb(50, 10, 30)`, marginBottom: "0px", paddingBottom: "10px", paddingTop: "10px", minWidth: "100vw" }
+                { backgroundColor: `rgb(13, 6, 145)`, marginBottom: "0px", paddingBottom: "10px", paddingTop: "10px", minWidth: "100vw" }
             } >
             <div className = "row" >
             <div className = "col12 col-sm-6" >
@@ -94,6 +151,7 @@ class Consultancy extends Component {
             </div> 
             </div >
             <Blog />
+            <Foter/> 
             </div >
         );
     }

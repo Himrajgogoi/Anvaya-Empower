@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Header from "./HeaderComponent";
 import { Modal, ModalBody, Button } from "reactstrap";
+import icon from "../images/anvaya.png";
+import back from "../images/background-anvaya.png";
 import { Link } from "react-router-dom";
 
 class Home extends Component {
@@ -36,18 +38,18 @@ class Home extends Component {
         if (this.state.isConHover) {
             Con = { backgroundColor: `rgb(218, 214, 6)`, marginTop: "10px", marginBottom: "10px", minHeight: "38vh", minWidth: "22vw" };
         } else {
-            Con = { backgroundColor: `#4086F0`, marginTop: "10px", marginBottom: "10px", minHeight: "38vh", minWidth: "22vw" };
+            Con = { backgroundColor: `rgb(211, 209, 245)`, marginTop: "10px", marginBottom: "10px", minHeight: "38vh", minWidth: "22vw" };
         }
         if (this.state.isTechHover) {
             Tech = { backgroundColor: `rgb(238, 69, 162)`, marginTop: "10px", marginBottom: "10px", minHeight: "38vh", minWidth: "22vw" };
         } else {
-            Tech = { backgroundColor: `#36E11A`, marginTop: "10px", marginBottom: "10px", minHeight: "38vh", minWidth: "22vw" };
+            Tech = { backgroundColor: `rgb(13, 6, 145)`, marginTop: "10px", marginBottom: "10px", minHeight: "38vh", minWidth: "22vw" };
         }
 
 
         return ( <div className = "body"
             style = {
-                { filter: "blur(4px)" }
+                { filter: "blur(4px)", backgroundImage: `url('${back}')`}
             } >
             <Header />
             <div className = "container" >
@@ -72,7 +74,8 @@ class Home extends Component {
             style = {
                 { marginTop: "80px" }
             } >
-            <p > < h4 className = "text-white" style={{fontFamily: "Montserrat, sans-serif", fontWeight: "600"}}> Welcome,
+            <p ><img src={icon} alt="icon" className="img-fluid" style={{height: "60px", width: "60px", marginBottom:"2vh"}}/>
+            < h4 className = "text-white" style={{fontFamily: "Montserrat, sans-serif", fontWeight: "600"}}> Welcome,
             at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned. </h4></p >
             </div> 
             <div className = "col-12 col-sm-4 offset-sm-1" >
@@ -88,7 +91,7 @@ class Home extends Component {
             onMouseLeave = { this.handleConHover } >
             <Button style = {
                 Con
-            } > <h5 > Consultancy </h5><span className="fa fa-arrow-right"></span > </Button> 
+            } > <h5 style={{color: "black"}}> Consultancy </h5><span className="fa fa-arrow-right" style={{color: "black"}}></span > </Button> 
 
             </Link >
 

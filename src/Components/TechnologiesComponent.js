@@ -4,6 +4,8 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import Header from "./HeaderComponent";
 import { Collapse, Card, CardHeader, CardBody, CardText, Jumbotron } from "reactstrap";
 import { Link } from "react-router-dom";
+import Foter from "./Footer";
+import back from "../images/background-anvaya.png";
 
 class Technologies extends Component {
     constructor(props) {
@@ -58,7 +60,7 @@ class Technologies extends Component {
         var style1;
         var style2;
         var style3;
-        var style4;
+        //var style4;
 
         if (this.state.isHoverCard1) {
             style1 = { backgroundColor: "blue", borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
@@ -75,17 +77,17 @@ class Technologies extends Component {
         } else {
             style3 = { backgroundColor: `#C4C4C4`, borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
         }
-        if (this.state.isHoverCard4) {
-            style4 = { backgroundColor: "blue", borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
+        // if (this.state.isHoverCard4) {
+        //     style4 = { backgroundColor: "blue", borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
 
-        } else {
-            style4 = { backgroundColor: `#C4C4C4`, borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
-        }
+        // } else {
+        //     style4 = { backgroundColor: `#C4C4C4`, borderRadius: "8px", minWidth: "20vw", minHeight: "15vh" }
+        // }
 
         var icon1;
         var icon2;
         var icon3;
-        var icon4;
+        //var icon4;
 
         if(this.state.isCard1Open){
             icon1 = "fa fa-arrow-up fa-lg text-white"
@@ -108,14 +110,15 @@ class Technologies extends Component {
             icon3="fa fa-arrow-down fa-lg text-white"
         }
 
-        if(this.state.isCard4Open){
-            icon4 = "fa fa-arrow-up fa-lg text-white"
-        }
-        else{
-            icon4="fa fa-arrow-down fa-lg text-white"
-        }
+        // if(this.state.isCard4Open){
+        //     icon4 = "fa fa-arrow-up fa-lg text-white"
+        // }
+        // else{
+        //     icon4="fa fa-arrow-down fa-lg text-white"
+        // }
 
-        return ( <div >
+        return ( <div style={{backgroundImage:`url(${back})`
+        ,backgroundSize: "cover", backgroundFit: "no repeat", backgroundPosition: "center center"}}>
             <Header />
             <Jumbotron style = {
                 { backgroundColor: `#36E11A`, marginBottom: "0px", minHeight: "2vh" }
@@ -137,14 +140,18 @@ class Technologies extends Component {
             isIntrinsicHeight = "true"
             isPlaying = "true"
             style = {
-                { marginTop: "0px", backgroundColor: `#58FAE6`, paddingTop: "10px", paddingBottom: "20px", minHeight: "30vh" }
+                { marginTop: "0px", backgroundColor: `#58FAE6`, minHeight: "30vh", marginBottom:"5vh" }
             } >
             <Slider >
-            <Slide index = { 0 } > <h4 > Slide1 </h4></Slide > 
-            <Slide index = { 1 } >
-            <h4 > Slide2 </h4>  </Slide > 
-            <Slide index = { 2 } >
-            <h4 > Slide3 </h4>  </Slide > 
+            <Slide index = { 0 } style={{backgroundImage: "url('https://cdn.pixabay.com/photo/2016/02/19/11/19/computer-1209641_1280.jpg')"
+                    ,backgroundSize: "cover", backgroundFit: "no repeat", backgroundPosition: "center center",minHeight: "30vh"}}><div className="container" style={{display:"flex",flexDirection:"row", justifyContent: "center",paddingTop:"30vh" }}><div className="row">
+                    <div className="col-3"  >< h4 className="text-white"> Slide1 </h4></div></div></div></Slide > 
+            <Slide index = { 1 } style={{backgroundImage: "url('https://cdn.pixabay.com/photo/2019/08/06/22/48/artificial-intelligence-4389372_1280.jpg')"
+                    ,backgroundSize: "cover", backgroundFit: "no repeat", backgroundPosition: "center center",minHeight: "30vh"}}><div className="container" style={{display:"flex",flexDirection:"row", justifyContent: "center",paddingTop:"30vh" }}><div className="row">
+                    <div className="col-3"  >< h4 className="text-white"> Slide2 </h4></div></div></div></Slide > 
+            <Slide index = { 2 } style={{backgroundImage: "url('https://cdn.pixabay.com/photo/2018/11/29/21/51/social-media-3846597_1280.png')"
+                    ,backgroundSize: "cover", backgroundFit: "no repeat", backgroundPosition: "center center",minHeight: "30vh"}}><div className="container" style={{display:"flex",flexDirection:"row", justifyContent: "center",paddingTop:"30vh" }}><div className="row">
+                    <div className="col-3"  >< h4 className="text-white"> Slide3</h4></div></div></div></Slide > 
             </Slider > </CarouselProvider> 
             <div className = "container" style={{marginBottom: "5vh"}}>
             <div className = "row" >
@@ -158,7 +165,7 @@ class Technologies extends Component {
             onMouseEnter = { this.handleHover1 }
             onMouseLeave = { this.handleHover1 } > <span className = "fa fa-laptop fa-lg text-white" > </span>
             <h3 className="d-inline text-white" style={{
-            fontFamily: "Montserrat, sans-serif", fontWeight: "600"}}> IoT Solutions</h3 > < span className = {icon1}
+            fontFamily: "Montserrat, sans-serif", fontWeight: "600"}}> Research and Development</h3 > < span className = {icon1}
             style = {
                 {
                     display: "flex",
@@ -169,7 +176,8 @@ class Technologies extends Component {
             <Collapse isOpen = { this.state.isCard1Open } >
             <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText style={{color: `rgb(255, 255, 255)`}}> We provide world class IoT solutions to ease your daily life and give you a seamless experience <Link to="/technologieschildren" style={{color: `rgb(255, 230, 0)`}}>read more <span className="fa fa-arrow-right d-inline"></span></Link> </CardText></CardBody >
+            } > < CardText style={{color: `rgb(255, 255, 255)`}}>Welcome,
+            at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned.<Link to="/ResearchAndDevelopment" style={{color: `rgb(255, 230, 0)`}}>read more <span className="fa fa-arrow-right d-inline"></span></Link> </CardText></CardBody >
             </Collapse> 
             </Card > 
             </div> 
@@ -183,7 +191,7 @@ class Technologies extends Component {
             onMouseEnter = { this.handleHover2 }
             onMouseLeave = { this.handleHover2 } > < span className = "fa fa-shield fa-lg text-white" >
             </span><h3 className="d-inline text-white" style={{
-            fontFamily: "Montserrat, sans-serif", fontWeight: "600"}}> Cyber Security</h3 > 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "600"}}> Our Service And Product</h3 > 
             < span className = {icon2}
             style = {
                 {
@@ -195,7 +203,8 @@ class Technologies extends Component {
             <Collapse isOpen = { this.state.isCard2Open } >
             <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText style={{color: `rgb(255, 255, 255)`}}> In today's digital world the importance of cyber security is immense <Link to="/technologieschildren" style={{color: `rgb(255, 230, 0)`}}>read more <span className="fa fa-arrow-right d-inline"></span></Link> </CardText></CardBody >
+            } > < CardText style={{color: `rgb(255, 255, 255)`}}>Welcome,
+            at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned.<Link to="/OurServiceAndProduct" style={{color: `rgb(255, 230, 0)`}}>read more <span className="fa fa-arrow-right d-inline"></span></Link> </CardText></CardBody >
             </Collapse> 
             </Card > 
             </div> 
@@ -218,7 +227,7 @@ class Technologies extends Component {
             onMouseEnter = { this.handleHover3 }
             onMouseLeave = { this.handleHover3 } > < span className = "fa fa-magic fa-lg text-white " >
             </span><h3 className="d-inline text-white" style={{
-            fontFamily: "Montserrat, sans-serif", fontWeight: "600"}}> Automation Solutions</h3 > < span className = {icon3}
+            fontFamily: "Montserrat, sans-serif", fontWeight: "600"}}> Training And Live Project</h3 > < span className = {icon3}
             style = {
                 {
                     display: "flex",
@@ -229,11 +238,12 @@ class Technologies extends Component {
             <Collapse isOpen = { this.state.isCard3Open } >
             <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText style={{color: `rgb(255, 255, 255)`}}> Automaion is the future. We provide inovative automation solutions <Link to="/technologieschildren" style={{color: `rgb(255, 230, 0)`}}>read more <span className="fa fa-arrow-right d-inline"></span></Link> </CardText></CardBody >
+            } > < CardText style={{color: `rgb(255, 255, 255)`}}>Welcome,
+            at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned. <Link to="/TrainingAndLiveProjects" style={{color: `rgb(255, 230, 0)`}}>read more <span className="fa fa-arrow-right d-inline"></span></Link> </CardText></CardBody >
             </Collapse> 
             </Card > 
             </div> 
-            <div className = "col-12 col-sm-6" >
+            {/* <div className = "col-12 col-sm-6" >
             <Card style = {
                 { borderRadius: "8px", marginBottom: "10px", marginTop: "10px", minWidth: "20vw", minHeight: "15vh" }
             } >
@@ -255,13 +265,14 @@ class Technologies extends Component {
             <Collapse isOpen = { this.state.isCard4Open } >
             <CardBody style = {
                 { borderRadius: "8px", backgroundColor: `#F57D39` }
-            } > < CardText style={{color: `rgb(255, 255, 255)`}}> Safety is incomplete without real-time tracking. We wish to provide the best safety measures in the market <Link to="/technologieschildren" style={{color:  `rgb(255, 230, 0)`}}>read more <span className="fa fa-arrow-right d-inline" ></span></Link> </CardText></CardBody >
+            } > < CardText style={{color: `rgb(255, 255, 255)`}}> Safety is incomplete without real-time tracking. We wish to provide the best safety measures in the market <Link to="/TrackingDevices" style={{color:  `rgb(255, 230, 0)`}}>read more <span className="fa fa-arrow-right d-inline" ></span></Link> </CardText></CardBody >
             </Collapse> 
             </Card > 
-            </div> 
+             </div>  */}
             </div >
 
-            </div>  
+            </div>
+            <Foter/>   
             </div >
         );
     }

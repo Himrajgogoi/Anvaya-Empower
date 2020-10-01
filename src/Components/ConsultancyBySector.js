@@ -1,16 +1,10 @@
 import React, { Component } from "react";
 import { CarouselProvider, Slider, Slide} from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import consultancy1 from "../images/consultancy1.jpeg";
-import consultancy2 from "../images/consultancy2.jpeg";
-import consultancy3 from "../images/consultancy3.jpeg";
-import consultancy4 from "../images/consultancy4.jpeg";
-import consultancy5 from "../images/consultancy5.jpeg";
-import consultancy6 from "../images/consultancy6.jpeg";
-import { Card, CardBody, CardText, CardImg} from "reactstrap";
-import { Link } from "react-router-dom";
+import {Card, CardBody, CardText, CardImg} from "reactstrap";
+import { HashLink as Link} from "react-router-hash-link";
 
-class Activities extends Component {
+class ConsultancyBySector extends Component {
     constructor(props){
         super(props);
         this.state={
@@ -107,10 +101,10 @@ class Activities extends Component {
         var slide2_style4;
 
         ///for slide3///
-        var slide3_style1;
-        var slide3_style2;
-        var slide3_style3;
-        var slide3_style4;
+        // var slide3_style1;
+        // var slide3_style2;
+        // var slide3_style3;
+        // var slide3_style4;
 
 
         ///for slide1///
@@ -118,19 +112,19 @@ class Activities extends Component {
             slide1_style1={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
         else{
-           slide1_style1= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
+           slide1_style1= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px"}
         }
         if(this.state.isHoverSlide1_Card2){
             slide1_style2={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
         else{
-           slide1_style2= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
+           slide1_style2= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px"}
         }
         if(this.state.isHoverSlide1_Card3){
             slide1_style3={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
         else{
-           slide1_style3= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
+           slide1_style3= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px"}
         }
         if(this.state.isHoverSlide1_Card4){
             slide1_style4={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
@@ -145,7 +139,7 @@ class Activities extends Component {
             slide2_style1={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
         else{
-           slide2_style1= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
+           slide2_style1= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px"}
         }
         if(this.state.isHoverSlide2_Card2){
             slide2_style2={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
@@ -157,7 +151,7 @@ class Activities extends Component {
             slide2_style3={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
         else{
-           slide2_style3= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
+           slide2_style3= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px"}
         }
         if(this.state.isHoverSlide2_Card4){
             slide2_style4={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
@@ -168,94 +162,98 @@ class Activities extends Component {
 
 
         ///for slide3///
-        if(this.state.isHoverSlide3_Card1){
-            slide3_style1={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
-        }
-        else{
-           slide3_style1= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
-        }
-        if(this.state.isHoverSlide3_Card2){
-            slide3_style2={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
-        }
-        else{
-           slide3_style2= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
-        }
-        if(this.state.isHoverSlide3_Card3){
-            slide3_style3={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
-        }
-        else{
-           slide3_style3= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
-        }
-        if(this.state.isHoverSlide3_Card4){
-            slide3_style4={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
-        }
-        else{
-           slide3_style4= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
-        }
+        // if(this.state.isHoverSlide3_Card1){
+        //     slide3_style1={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
+        // }
+        // else{
+        //    slide3_style1= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
+        // }
+        // if(this.state.isHoverSlide3_Card2){
+        //     slide3_style2={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
+        // }
+        // else{
+        //    slide3_style2= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
+        // }
+        // if(this.state.isHoverSlide3_Card3){
+        //     slide3_style3={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
+        // }
+        // else{
+        //    slide3_style3= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
+        // }
+        // if(this.state.isHoverSlide3_Card4){
+        //     slide3_style4={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
+        // }
+        // else{
+        //    slide3_style4= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
+        // }
 
         return ( <div >
             <CarouselProvider naturalSlideWidth = { 100 }
-            totalSlides = { 3 }
+            totalSlides = { 2 }
             isIntrinsicHeight = "true"
             isPlaying = "true"
             style = {
-                { backgroundColor: `#C4C4C4`, paddingTop: "10px", paddingBottom: "20px", minHeight: "30vh" }
+                { backgroundColor: `rgb(211, 209, 245)`, paddingTop: "10px", paddingBottom: "20px", minHeight: "30vh" }
             } >
             <Slider >
             <Slide index = { 0 } > < div className = "container" >
             <div className = "row" >
             <div className = "col-6 col-md-3" >
-            <Link to = "/ActivitiesChildren" >
+            <Link to = "/ConsultancySectors#Education" >
             <Card style = {
                 slide1_style4
             } onMouseEnter ={this.handleHoverSlide1_Card4} onMouseLeave={this.handleHoverSlide1_Card4}>
-            <CardImg src={consultancy1} className="img-fluid" style={{ height:"30vh"}}/>
+            <CardImg src="https://www.flaticon.com/svg/static/icons/svg/2972/2972117.svg" className="img-fluid" style={{ height:"30vh"}}/>
+           
             <CardBody style = {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-           fontFamily: "Montserrat, sans-serif", fontWeight: "800" }} ><h5><b>Business Development</b></h5> </CardText> </CardBody > 
+           fontFamily: "Montserrat, sans-serif", fontWeight: "800" }} ><b>Education</b> </CardText> </CardBody > 
             </Card>  
             </Link > 
             </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/ActivitiesChildren" >
+            <Link to = "/ConsultancySectors#BeveragesAndFood">
             <Card style = {
                slide1_style1
             } onMouseEnter ={this.handleHoverSlide1_Card1} onMouseLeave={this.handleHoverSlide1_Card1}>
-            <CardImg src={consultancy2} className="img-fluid" style={{ height:"30vh"}}/>
+            <CardImg src="https://www.flaticon.com/svg/static/icons/svg/947/947890.svg" className="img-fluid" style={{ height:"30vh"}}/>
+            
             <CardBody style = {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-        fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Management Planning</b></h5> </CardText> 
+        fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Beverages And Food</b> </CardText> 
             </CardBody > </Card> </Link >
 
             </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/ActivitiesChildren" >
+            <Link to = "/ConsultancySectors#ConsumerMarket" >
             <Card style = {
                 slide1_style2
             } onMouseEnter ={this.handleHoverSlide1_Card2} onMouseLeave={this.handleHoverSlide1_Card2}>
-            <CardImg src={consultancy3} className="img-fluid" style={{ height:"30vh"}}/>
+            <CardImg src="https://www.flaticon.com/svg/static/icons/svg/2760/2760934.svg" className="img-fluid" style={{ height:"30vh"}}/>
+            
             <CardBody style = {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-        fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Project Management</b></h5></CardText> </CardBody > </Card> 
+        fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Consumers Market</b></CardText> </CardBody > </Card> 
             </Link > 
             </div >
             <div className = "col-6 col-md-3" >
-            <Link to = "/ActivitiesChildren" >
+            <Link to = "/ConsultancySectors#HospitalityAndTravel" >
             <Card style = {
                 slide1_style3
             } onMouseEnter ={this.handleHoverSlide1_Card3} onMouseLeave={this.handleHoverSlide1_Card3}>
-            <CardImg src={consultancy4} className="img-fluid" style={{ height:"30vh"}}/>
+            <CardImg src="https://www.flaticon.com/svg/static/icons/svg/701/701360.svg" className="img-fluid" style={{ height:"30vh"}}/>
+           
             <CardBody style = {
                 { backgroundColor:"white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Contingency Planning</b></h5></CardText> </CardBody > </Card> 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Hospitality And Travel</b></CardText> </CardBody > </Card> 
             </Link > 
             </div > 
             </div > 
@@ -265,119 +263,67 @@ class Activities extends Component {
             <div className = "container" > 
             <div className = "row" >
             <div className = "col-6 col-md-3" >
-            <Link to = "/ActivitiesChildren" >
+            <Link to = "/ConsultancySectors#Technology" >
             <Card style = {
                slide2_style4
             }  onMouseEnter ={this.handleHoverSlide2_Card4} onMouseLeave={this.handleHoverSlide2_Card4}>
-            <CardImg src={consultancy5} className="img-fluid" style={{ height:"30vh"}}/>
+            <CardImg src="https://www.flaticon.com/svg/static/icons/svg/1086/1086685.svg" className="img-fluid" style={{ height:"30vh"}}/>
+            
             <CardBody style = {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Project Management</b></h5></CardText> </CardBody > 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Technology</b></CardText> </CardBody > 
             </Card>  
             </Link > </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/ActivitiesChildren" >
+            <Link to = "/ConsultancySectors#HealthcareAndLifeScience" >
             <Card style = {
                slide2_style1
             } onMouseEnter ={this.handleHoverSlide2_Card1} onMouseLeave={this.handleHoverSlide2_Card1}>
-            <CardImg src={consultancy6} className="img-fluid" style={{ height:"30vh"}}/>
+            <CardImg src="https://www.flaticon.com/svg/static/icons/svg/3030/3030888.svg" className="img-fluid" style={{ height:"30vh"}}/>
+           
             <CardBody style = {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Contingency Planning</b></h5></CardText> 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Healthcare And Life Science</b></CardText> 
             </CardBody > </Card> </Link > 
             </div > 
             <div className = "col-6 col-md-3" >
-            <Link to = "/ActivitiesChildren" >
+            <Link to = "/ConsultancySectors#Automobile" >
             <Card style = {
                 slide2_style2
             } onMouseEnter ={this.handleHoverSlide2_Card2} onMouseLeave={this.handleHoverSlide2_Card2}>
-            <CardImg src={consultancy1} className="img-fluid" style={{ height:"30vh"}}/>
+            <CardImg src="https://www.flaticon.com/svg/static/icons/svg/1087/1087114.svg" className="img-fluid" style={{ height:"30vh"}}/>
+            
             <CardBody style = {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Business Development</b></h5></CardText> 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>Automobile</b></CardText> 
             </CardBody > 
             </Card> </Link > 
             </div >
             <div className = "col-6 col-md-3" >
-            <Link to = "/ActivitiesChildren" >
+            <Link to = "/ConsultancySectors#MSME" >
             <Card style = {
                 slide2_style3
             } onMouseEnter ={this.handleHoverSlide2_Card3} onMouseLeave={this.handleHoverSlide2_Card3}>
-            <CardImg src={consultancy2} className="img-fluid" style={{ height:"30vh"}}/> 
+            <CardImg src="https://www.flaticon.com/svg/static/icons/svg/3120/3120330.svg" className="img-fluid" style={{ height:"30vh"}}/>
+           
             <CardBody style = {
                 { backgroundColor: "white", borderRadius: "12px" }
             } >
             <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Management Planning</b></h5></CardText> </CardBody > 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><b>MSME</b></CardText> </CardBody > 
             </Card> 
             </Link > 
             </div > 
             </div > 
             </div > 
             </Slide> 
-            <Slide index = { 2 } >
-            <div className = "container" > 
-            <div className = "row" >
-            <div className = "col-6 col-md-3" >
-            <Link to = "/ActivitiesChildren" >
-            <Card style = {
-               slide3_style4
-            } onMouseEnter ={this.handleHoverSlide3_Card4} onMouseLeave={this.handleHoverSlide3_Card4}>
-            <CardImg src={consultancy3} className="img-fluid" style={{ height:"30vh"}}/>
-            <CardBody style = {
-                { backgroundColor: "white", borderRadius: "12px" }
-            } >
-            <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Management Planning</b></h5></CardText> </CardBody > </Card> </Link > 
-            </div > 
-            <div className = "col-6 col-md-3" >
-            <Link to = "/ActivitiesChildren" >
-            <Card style = {
-               slide3_style1
-            }  onMouseEnter ={this.handleHoverSlide3_Card1} onMouseLeave={this.handleHoverSlide3_Card1}>
-            <CardImg src={consultancy4} className="img-fluid" style={{ height:"30vh"}}/>
-            <CardBody style = {
-                { backgroundColor: "white", borderRadius: "12px" }
-            } >
-            <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Project Management</b></h5></CardText> </CardBody > </Card>  </Link > 
-            </div > 
-            <div className = "col-6 col-md-3" >
-            <Link to = "/ActivitiesChildren" >
-            <Card style = {
-                slide3_style2
-            }  onMouseEnter ={this.handleHoverSlide3_Card2} onMouseLeave={this.handleHoverSlide3_Card2}>
-            <CardImg src={consultancy5} className="img-fluid" style={{ height:"30vh"}}/>
-            <CardBody style = {
-                { backgroundColor: "white", borderRadius: "12px" }
-            } >
-            <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}} ><h5><b>Contingency Planning</b></h5></CardText> </CardBody > 
-            </Card> </Link >
-
-            </div >
-            <div className = "col-6 col-md-3" >
-            <Link to = "/ActivitiesChildren" >
-            <Card style = {
-                slide3_style3
-            }  onMouseEnter ={this.handleHoverSlide3_Card3} onMouseLeave={this.handleHoverSlide3_Card3}>
-            <CardImg src={consultancy6} className="img-fluid" style={{ height:"30vh"}}/>
-            <CardBody style = {
-                { backgroundColor: "white", borderRadius: "12px" }
-            } >
-            <CardText style={{color: "black",
-            fontFamily: "Montserrat, sans-serif", fontWeight: "800"}}><h5><b>Business Development</b></h5></CardText> </CardBody > </Card> </Link >
-
-            </div > 
-            </div > 
-            </div > 
-            </Slide> 
+            
             </Slider > 
             </CarouselProvider >
             </div>
@@ -385,4 +331,4 @@ class Activities extends Component {
     }
 }
 
-export default Activities;
+export default ConsultancyBySector;
