@@ -16,7 +16,7 @@ class Consultancy extends Component {
         ,backgroundSize: "cover", backgroundFit: "no repeat", backgroundPosition: "center center"}}>
             <Header />
             <Jumbotron style = {
-                { backgroundColor: `rgb(3, 3, 41)`, marginBottom: "0px", minHeight: "2vh", paddingLeft: "0px" }
+                { backgroundColor:  `rgb(13, 6, 145)`, marginBottom: "0px", minHeight: "2vh", paddingLeft: "0px" }
             } >
             <div className = "container" >
             <div className = "row" >
@@ -119,7 +119,7 @@ class Consultancy extends Component {
             <h2 style = {
                 { marginTop: "5px", marginBottom: "5px", fontFamily: "Montserrat, sans-serif", fontWeight: "600" }
             }
-            className = "text-white" > Consultancy Service </h2> </div > 
+            className = "text-white" id="ConsultancyService"> Consultancy Service </h2> </div > 
             </div> 
             </div > 
             <ConsultancyByService />
@@ -133,7 +133,7 @@ class Consultancy extends Component {
             <h2 style = {
                 { marginTop: "5px", marginBottom: "5px",fontFamily: "Montserrat, sans-serif", fontWeight: "600" }
             }
-            className = "text-white" > Consulting </h2> 
+            className = "text-white" id="ConsultancyBySector"> Consultancy By Sector</h2> 
             </div > 
             </div> 
             </div >
@@ -147,7 +147,7 @@ class Consultancy extends Component {
             <h2 style = {
                 { marginTop: "5px", marginBottom: "5px", fontFamily: "Montserrat, sans-serif", fontWeight: "600" }
             }
-            className = "text-white" > Blog </h2> </div > 
+            className = "text-white" id="Blog"> Blog </h2> </div > 
             </div> 
             </div >
             <Blog />

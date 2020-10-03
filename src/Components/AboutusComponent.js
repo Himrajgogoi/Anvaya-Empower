@@ -9,7 +9,7 @@ function Aboutus(props){
        <div style={{backgroundImage:`url(${back})`
        ,backgroundSize: "cover", backgroundFit: "no repeat", backgroundPosition: "center center"}}>
            <Header/>
-           <div style={{marginBottom: "0px", minHeight: "15vh", backgroundColor:`rgb(3, 3, 41)`, minWidth: "100vw"}}>
+           <div style={{marginBottom: "0px", minHeight: "15vh", backgroundColor: `rgb(13, 6, 145)`, minWidth: "100vw"}}>
                <div className="container">
                    <div className="row">
                        <div className="col-12 col-sm-6">

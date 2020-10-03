@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Navbar, NavbarBrand, Nav, NavItem, NavbarToggler, Collapse } from "reactstrap";
 import { NavLink, Link } from "react-router-dom";
+import {NavHashLink} from "react-router-hash-link";
 import icon from "../images/anvaya.png";
 
 class Header extends Component {
@@ -139,31 +140,30 @@ class Header extends Component {
                 { color: "white", paddingLeft: "10px" }
             } > </span> </h4 >  </NavLink > 
             <Collapse isOpen = { this.state.isConsultNavOpen } >
+            <NavItem onMouseEnter = { this.toggleChild2 }
+            onMouseLeave = { this.toggleChild2 }
+            style = {
+                childstyle2
+            } >
+            <NavHashLink smooth to = "/consultancy#ConsultancyService"
+            className = "nav-link text-white" > Consultancy Service </NavHashLink> 
+            </NavItem >
 
             <NavItem onMouseEnter = { this.toggleChild1 }
             onMouseLeave = { this.toggleChild1 }
             style = {
                 childstyle1
             } >
-            <NavLink to = "/ConsultancySectors"
-            className = "nav-link text-white" > Consultancy By Sector</NavLink> 
+            <NavHashLink smooth to = "/consultancy#ConsultancyBySector"
+            className = "nav-link text-white" > Consultancy By Sector</NavHashLink> 
             </NavItem >
-            <NavItem onMouseEnter = { this.toggleChild2 }
-            onMouseLeave = { this.toggleChild2 }
-            style = {
-                childstyle2
-            } >
-            <NavLink to = "/ConsultancyServices"
-            className = "nav-link text-white" > Consultancy Service </NavLink> 
-            </NavItem >
-
             <NavItem onMouseEnter = { this.toggleChild3 }
             onMouseLeave = { this.toggleChild3 }
             style = {
                 childstyle3
             } >
-            <NavLink to = "/BlogChildren"
-            className = "nav-link text-white" > Blogs </NavLink>  
+            <NavHashLink smooth to = "/consultancy#Blog"
+            className = "nav-link text-white" > Blogs </NavHashLink>  
             </NavItem > </Collapse> 
             </NavItem >
             <NavItem >

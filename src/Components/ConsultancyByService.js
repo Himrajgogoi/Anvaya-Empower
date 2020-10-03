@@ -109,70 +109,70 @@ class ConsultancyByService extends Component {
 
         ///for slide1///
         if(this.state.isHoverSlide1_Card1){
-            slide1_style1={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
+            slide1_style1={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)", backgroundColor: `rgb(7, 255, 19)`}
         }
         else{
-           slide1_style1= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px"}
+           slide1_style1= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px", boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
         if(this.state.isHoverSlide1_Card2){
-            slide1_style2={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
+            slide1_style2={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)", backgroundColor: `rgb(7, 255, 19)`}
         }
         else{
-           slide1_style2= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px"}
+           slide1_style2= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px", boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
         if(this.state.isHoverSlide1_Card3){
-            slide1_style3={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
+            slide1_style3={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)", backgroundColor: `rgb(7, 255, 19)`}
         }
         else{
-           slide1_style3= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px"}
+           slide1_style3= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px", boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
         if(this.state.isHoverSlide1_Card4){
-            slide1_style4={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
+            slide1_style4={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)", backgroundColor: `rgb(7, 255, 19)`}
         }
         else{
-           slide1_style4= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
+           slide1_style4= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
 
 
         ///for slide2///
         if(this.state.isHoverSlide2_Card1){
-            slide2_style1={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
+            slide2_style1={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)", backgroundColor: `rgb(7, 255, 19)`}
         }
         else{
-           slide2_style1= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px"}
+           slide2_style1= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px", boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
         if(this.state.isHoverSlide2_Card2){
-            slide2_style2={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
+            slide2_style2={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)", backgroundColor: `rgb(7, 255, 19)`}
         }
         else{
-           slide2_style2= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
+           slide2_style2= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
         if(this.state.isHoverSlide2_Card3){
-            slide2_style3={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
+            slide2_style3={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)", backgroundColor: `rgb(7, 255, 19)`}
         }
         else{
-           slide2_style3= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px"}
+           slide2_style3= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px", boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
         if(this.state.isHoverSlide2_Card4){
-            slide2_style4={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
+            slide2_style4={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)", backgroundColor: `rgb(7, 255, 19)`}
         }
         else{
-           slide2_style4= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
+           slide2_style4= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
 
 
         ///for slide3///
         if(this.state.isHoverSlide3_Card1){
-            slide3_style1={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
+            slide3_style1={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)", backgroundColor: `rgb(7, 255, 19)`}
         }
         else{
-           slide3_style1= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
+           slide3_style1= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
         if(this.state.isHoverSlide3_Card2){
-            slide3_style2={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
+            slide3_style2={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)", backgroundColor: `rgb(7, 255, 19)`}
         }
         else{
-           slide3_style2= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
+           slide3_style2= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
         // if(this.state.isHoverSlide3_Card3){
         //     slide3_style3={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
@@ -181,10 +181,10 @@ class ConsultancyByService extends Component {
         //    slide3_style3= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
         // }
         if(this.state.isHoverSlide3_Card4){
-            slide3_style4={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
+            slide3_style4={ marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)", backgroundColor: `rgb(7, 255, 19)`}
         }
         else{
-           slide3_style4= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" }
+           slide3_style4= { marginTop: "10px", minHeight: "30vh", borderRadius: "12px" , boxShadow: "5px 10px 8px rgb(93, 93, 99)"}
         }
 
         return ( <div >

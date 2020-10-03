@@ -11,12 +11,14 @@
         "font-awesome": "^4.7.0",
         "pure-react-carousel": "^1.27.1",
         "react": "^16.13.1",
+        "react-animation-components": "^3.0.0",
         "react-bootstrap": "^1.2.2",
         "react-dom": "^16.13.1",
         "react-popup": "^0.10.0",
         "react-router-dom": "^5.2.0",
         "react-router-hash-link": "^2.1.0",
         "react-scripts": "3.4.1",
+        "react-transition-group": "^4.4.1",
         "reactstrap": "^8.5.1"
     },
     "scripts": {
