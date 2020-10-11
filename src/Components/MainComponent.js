@@ -29,8 +29,8 @@ class Main extends Component {
             component = { Technologies }
             />
              
-            <Route path="/ConsultancySectors" component={ConsultancySectors}/>
-            <Route path="/ConsultancyServices" component={ConsultancyService}/>
+            <Route path="/ConsultancySectors/:id" component={ConsultancySectors}/>
+            <Route path="/ConsultancyServices/:id" component={ConsultancyService}/>
             <Route path = "/BlogChildren" component={BlogChildren}/>
 
             <Route path = "/OurServiceAndProduct" component={OurServiceAndProduct}/>

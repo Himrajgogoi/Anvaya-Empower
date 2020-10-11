@@ -1,0 +1,115 @@
+{
+  "consultancyServices": [
+    {
+      "id": "branding",
+      "head": "branding",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "marketing",
+      "head": "marketing",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "sales",
+      "head": "sales",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "marketresearch",
+      "head": "market research",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "businessadvisor",
+      "head": "new business advisory and existing business acceleration support",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "humanresource",
+      "head": "human resource",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "csr",
+      "head": "CSR",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "digitalmarketing",
+      "head": "digital marketing",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "operationalefficiency",
+      "head": "operational efficiency (supply chain) and quality control",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "regulatoryandgovernmentpolicy",
+      "head": "regulatory and government policy",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "funding",
+      "head": "funding compliance assessment",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    }
+  ],
+  "consultancySectors" : [
+    {
+      "id": "education",
+      "head": "education",
+      "photo": "https://www.flaticon.com/svg/static/icons/svg/2972/2972085.svg",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "beveragesandfood",
+      "head": "beverages and food",
+      "photo": "https://www.flaticon.com/svg/static/icons/svg/947/947859.svg",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "beveragesandfood",
+      "head": "beverages and food",
+      "photo": "https://www.flaticon.com/svg/static/icons/svg/2760/2760970.svg",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "consumermarket",
+      "head": "consumer market",
+      "photo": "ttps://www.flaticon.com/svg/static/icons/svg/2760/2760970.svg",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "hospitality",
+      "head": "hospitality and travel",
+      "photo": "https://www.flaticon.com/svg/static/icons/svg/776/776568.svg",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "technology",
+      "head": "technology",
+      "photo": "https://www.flaticon.com/svg/static/icons/svg/1086/1086722.svg",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "healthcare",
+      "head": "health care and life science",
+      "photo": "https://www.flaticon.com/svg/static/icons/svg/3030/3030909.svg",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "automobile",
+      "head": "automobile",
+      "photo": "https://www.flaticon.com/svg/static/icons/svg/1086/1086738.svg",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    },
+    {
+      "id": "msme",
+      "head": "MSME",
+      "photo": "https://www.flaticon.com/svg/static/icons/svg/2979/2979615.svg",
+      "desc": "Welcome, at AnvayaEmpower we believe in providing innovative solutions to your career or technological problems.We broadly offer two kinds of services, as mentioned."
+    }
+  ]
+}
