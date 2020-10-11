@@ -283,7 +283,7 @@ class ConsultancyBySector extends Component {
               <div className="container">
                 <div className="row">
                   <div className="col-6 col-md-3">
-                    <Link to="/ConsultancySectors#Education">
+                    <Link to="/ConsultancySectors/education">
                       <Card
                         style={slide1_style4}
                         onMouseEnter={this.handleHoverSlide1_Card4}
@@ -315,7 +315,7 @@ class ConsultancyBySector extends Component {
                     </Link>
                   </div>
                   <div className="col-6 col-md-3">
-                    <Link to="/ConsultancySectors#BeveragesAndFood">
+                    <Link to="/ConsultancySectors/beveragesandfood">
                       <Card
                         style={slide1_style1}
                         onMouseEnter={this.handleHoverSlide1_Card1}
@@ -346,7 +346,7 @@ class ConsultancyBySector extends Component {
                     </Link>
                   </div>
                   <div className="col-6 col-md-3">
-                    <Link to="/ConsultancySectors#ConsumerMarket">
+                    <Link to="/ConsultancySectors/consumermarket">
                       <Card
                         style={slide1_style2}
                         onMouseEnter={this.handleHoverSlide1_Card2}
@@ -377,7 +377,7 @@ class ConsultancyBySector extends Component {
                     </Link>
                   </div>
                   <div className="col-6 col-md-3">
-                    <Link to="/ConsultancySectors#HospitalityAndTravel">
+                    <Link to="/ConsultancySectors/hospitality">
                       <Card
                         style={slide1_style3}
                         onMouseEnter={this.handleHoverSlide1_Card3}
@@ -414,7 +414,7 @@ class ConsultancyBySector extends Component {
               <div className="container">
                 <div className="row">
                   <div className="col-6 col-md-3">
-                    <Link to="/ConsultancySectors#Technology">
+                    <Link to="/ConsultancySectors/technology">
                       <Card
                         style={slide2_style4}
                         onMouseEnter={this.handleHoverSlide2_Card4}
@@ -446,7 +446,7 @@ class ConsultancyBySector extends Component {
                     </Link>{" "}
                   </div>
                   <div className="col-6 col-md-3">
-                    <Link to="/ConsultancySectors#HealthcareAndLifeScience">
+                    <Link to="/ConsultancySectors/healthcare">
                       <Card
                         style={slide2_style1}
                         onMouseEnter={this.handleHoverSlide2_Card1}
@@ -477,7 +477,7 @@ class ConsultancyBySector extends Component {
                     </Link>
                   </div>
                   <div className="col-6 col-md-3">
-                    <Link to="/ConsultancySectors#Automobile">
+                    <Link to="/ConsultancySectors/automobile">
                       <Card
                         style={slide2_style2}
                         onMouseEnter={this.handleHoverSlide2_Card2}
@@ -509,7 +509,7 @@ class ConsultancyBySector extends Component {
                     </Link>
                   </div>
                   <div className="col-6 col-md-3">
-                    <Link to="/ConsultancySectors#MSME">
+                    <Link to="/ConsultancySectors/msme">
                       <Card
                         style={slide2_style3}
                         onMouseEnter={this.handleHoverSlide2_Card3}
