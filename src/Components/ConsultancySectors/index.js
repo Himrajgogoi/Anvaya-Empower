@@ -1,24 +1,26 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Header from "./HeaderComponent";
+import Header from "../HeaderComponent";
 import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
 import { Card, CardBody, CardText } from "reactstrap";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import Foter from "./Footer";
-import back from "../images/background-anvaya.png";
-import data from "../data.json";
+import Foter from "../Footer";
+import back from "../../images/background-anvaya.png";
+import PreviewCard from "../Card";
+import { consultancySectors as consultancySectorsData } from "../../data.json";
 
-const ConsultancyService = () => {
+const ConsultancySectors = () => {
   const { id } = useParams();
   const [displayData, setDisplayData] = useState({
     head: "",
-    desc: "",
+    desc: [""],
+    photo: "",
   });
 
   useEffect(() => {
-    const displayData = data.consultancyServices.find((e) => e.id === id);
+    const displayData = consultancySectorsData.find((e) => e.id === id);
     setDisplayData(displayData);
-  }, []);
+  }, [id]);
 
   return (
     <div
@@ -49,7 +51,7 @@ const ConsultancyService = () => {
                   fontWeight: "800",
                 }}
               >
-                Consultancy Services
+                Consultancy Sectors
               </h1>
             </div>
           </div>
@@ -161,7 +163,6 @@ const ConsultancyService = () => {
                 fontWeight: "800",
                 textTransform: "capitalize",
               }}
-              id="Branding"
             >
               {displayData.head}
             </h2>
@@ -182,8 +183,7 @@ const ConsultancyService = () => {
           minWidth: "100vw",
           minHeight: "50vh",
           backgroundColor: `#B8EFA4`,
-          backgroundImage:
-            "url('https://www.flaticon.com/svg/static/icons/svg/1253/1253444.svg')",
+          backgroundImage: `url(${displayData.photo})`,
           backgroundSize: "12vw 12vh",
           backgroundRepeat: "no repeat",
           backgroundPosition: "center center",
@@ -200,17 +200,17 @@ const ConsultancyService = () => {
               <Card style={{ padding: "4vh 4vw 4vh 4vw" }}>
                 <CardBody style={{ border: "1px solid" }}>
                   <CardText>
-                    <p>
-                      {" "}
-                      <h4
-                        style={{
-                          fontFamily: "Montserrat, sans-serif-800x",
-                          color: "black",
-                        }}
-                      >
-                        {displayData.desc}
-                      </h4>
-                    </p>
+                    {" "}
+                    <h4
+                      style={{
+                        fontFamily: "Montserrat, sans-serif-800x",
+                        color: "black",
+                      }}
+                    >
+                      {displayData.desc.map((p) => (
+                        <p>{p}</p>
+                      ))}
+                    </h4>
                   </CardText>
                 </CardBody>
               </Card>
@@ -218,9 +218,23 @@ const ConsultancyService = () => {
           </div>
         </div>
       </div>
+      <div className="preview-container">
+        {consultancySectorsData
+          .filter(
+            (item) => item.head.toLowerCase() !== displayData.head.toLowerCase()
+          )
+          .map((item) => (
+            <div className="preview-card-container">
+              <PreviewCard
+                title={item.head}
+                icon={item.icon}
+                linkId={`/ConsultancySectors/${item.id}`}
+              />
+            </div>
+          ))}
+      </div>
       <Foter />
     </div>
   );
 };
-
-export default ConsultancyService;
+export default ConsultancySectors;

@@ -1,0 +1,12 @@
+.consultancyBySector-container {
+    background-color: #d3d1f5;
+}
+
+.consultancyBySector{
+    display: flex;
+}
+
+.display-card-sector-container {
+    margin: 1rem;
+}
+

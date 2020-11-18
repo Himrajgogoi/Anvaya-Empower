@@ -1,0 +1,24 @@
+.card-root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 10px 10px 23px -17px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  color: black !important;
+  user-select: none;
+}
+
+.card-root a {
+  color: black !important;
+  text-decoration: none; /* no underline */
+}
+
+.card-image {
+  height: 2.8rem;
+  margin-bottom: 1.2rem;
+}

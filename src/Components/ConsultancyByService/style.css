@@ -1,0 +1,11 @@
+.consultancyByService-container {
+    background-color: #d3d1f5;
+}
+
+.consultancyByService{
+    display: flex;
+}
+
+.display-card-service-container {
+    margin: 1rem;
+}

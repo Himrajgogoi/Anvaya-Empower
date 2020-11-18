@@ -1,0 +1,8 @@
+.preview-container {
+    display: flex;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+}
+.preview-card-container{
+    margin: 1rem;
+}
